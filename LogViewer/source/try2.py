@@ -44,15 +44,15 @@ class HSplitterPanel(wx.Panel):
         wx.Panel.__init__(self, parent)
         self.SetBackgroundColour(color)
         splitter = wx.SplitterWindow(self, style=wx.SP_3D | wx.SP_LIVE_UPDATE)
-        TopPanel = wx.Panel(splitter)
-        BottomPanel = wx.Panel(splitter)
-        TopPanel.SetBackgroundColour('YELLOW GREEN')
-        BottomPanel.SetBackgroundColour('SLATE BLUE')
+        self.TopPanel = wx.Panel(splitter)
+        self.BottomPanel = wx.Panel(splitter)
+        self.TopPanel.SetBackgroundColour('YELLOW GREEN')
+        self.BottomPanel.SetBackgroundColour('SLATE BLUE')
 
-        splitter.SplitHorizontally(TopPanel, BottomPanel)
-        PanelSizer = wx.BoxSizer(wx.VERTICAL)
-        PanelSizer.Add(splitter, 1, wx.EXPAND | wx.ALL)
-        self.SetSizer(PanelSizer)
+        splitter.SplitHorizontally(self.TopPanel, self.BottomPanel)
+        self.PanelSizer = wx.BoxSizer(wx.VERTICAL)
+        self.PanelSizer.Add(splitter, 1, wx.EXPAND | wx.ALL)
+        self.SetSizer(self.PanelSizer)
 
 
 ########################################################################
@@ -77,6 +77,16 @@ class MainFrame(wx.Frame):
         MainSizer = wx.BoxSizer(wx.HORIZONTAL)
         MainSizer.Add(mainsplitter, 1, wx.EXPAND | wx.ALL)
         self.SetSizer(MainSizer)
+
+        self.text = wx.TextCtrl(splitterpanel1.TopPanel, style=wx.TE_MULTILINE)
+        splitterpanel1.PanelSizer.Add(self.text, 1, wx.EXPAND)
+        # splitterpanel1.TopPanel.SetSizerAndFit(splitterpanel1.PanelSizer)
+
+        # languages = ['C', 'C++', 'Java', 'Python', 'Perl',
+        #              'JavaScript', 'PHP', 'VB.NET', 'C#']
+        # lst = wx.ListBox(splitterpanel1.BottomPanel, size=(100, 300), choices=languages, style=wx.LB_SINGLE)
+
+
         #################################################################
         self.Show()
 
