@@ -8,7 +8,7 @@ import wx.lib.agw.aui as aui
 import wx.lib.agw.persist as PM
 import wx.lib.inspection
 import wx.lib.mixins.inspection
-from pubsub import pub
+# from pubsub import pub
 
 from LogViewer.source.config import APP_LONG_NAME, CONFIGFILE_PATH, APP_NAME
 
@@ -78,9 +78,9 @@ class MainFrame(wx.Frame):
         mainsizer.Add(leftBox)
 
         self.treePanel = wx.Panel(self.splitter, style=wx.TAB_TRAVERSAL | wx.CLIP_CHILDREN)
-        self.treeview = wx.TreeCtrl(parent=self.treePanel)
-        leftBox.Add(self.treeview, 1, wx.EXPAND)
-        self.treePanel.SetSizerAndFit(leftBox)
+        # self.treeview = wx.TreeCtrl(parent=self.treePanel)
+        # leftBox.Add(self.treeview, 1, wx.EXPAND)
+        # self.treePanel.SetSizerAndFit(leftBox)
 
         # self.listerPanel = wx.Panel(self.splitter)
         # self.treeview = wx.TreeCtrl(parent=self.treePanel)
@@ -139,3 +139,11 @@ class MainFrame(wx.Frame):
 
     # def BuildLogWindow(self):
     #     pass
+
+if __name__ == '__main__':
+
+    from LogViewer.source.main import App
+    app = App()
+    app.start()
+
+    frame = MainFrame(None)
