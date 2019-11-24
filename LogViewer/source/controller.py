@@ -14,18 +14,12 @@ example_VW = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\VW_tra
 LOGPATH = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs'
 
 
-# logger = logging.getLogger('controller')
-
-
 class Controller:
 
     def __init__(self):
         self.view = MainFrame(None, -1, APP_LONG_NAME, size=(1250, 690))  # the GUI
-        # logger.debug('Created the view component')
         self.logs = self.detect_logs()
-        # logger.debug('Detected {} logs'.format(len(self.logs.descendants)))
         self.view.treectrl.update_tree(treedata=self.logs)
-        # logger.debug('Updated the view')
         self._active_log = None
         pub.subscribe(self.set_active_log, 'tree.selected')
 
@@ -40,7 +34,7 @@ class Controller:
         :rtype:
         """
         logs = Node(name='Logs')  # the tree holding the available logs
-        # trying all known log descriptors
+        # trying all log descriptors found in log_definition.py
         for logdef in logdefinitions:
             ld = LogDescriptor(parent=logs, **logdef)
             for filename in os.listdir(logdir):
@@ -58,6 +52,8 @@ class Controller:
             pub.sendMessage('list.levels', levels=self._active_log.get_levels())
             pub.sendMessage('list.emitters', emitters=self._active_log.get_emitters())
             pub.sendMessage('list.filled')
+        else:
+            pub.sendMessage('clear.all')
 
     def print_logtree(self):
         print(RenderTree(self.logs, style=ContStyle()))

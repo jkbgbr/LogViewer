@@ -100,12 +100,15 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
                                       style=wx.LC_REPORT | wx.LC_VIRTUAL | wx.LC_HRULES | wx.LC_VRULES)
         self.log = None
         self.all_lines = None
-        pub.subscribe(self.set_log, 'tree.selected')
+        # pub.subscribe(self.set_log, 'tree.selected')
         pub.subscribe(self.set_columns, 'list.filled')
         pub.subscribe(self.fill_list, 'list.filter')
 
     def set_log(self, log):
         self.log = log
+
+    def clear_all(self):
+        self.ClearAll()
 
     def build_columns(self, log=None):
         self.Freeze()
@@ -160,6 +163,7 @@ class MainFrame(wx.Frame):
         self.treectrl = None
         self.levellist = None
         self.loglist = None
+        self.settingspanel = None
 
         # setting up the window
         self.SetMinSize(size)
@@ -180,6 +184,11 @@ class MainFrame(wx.Frame):
 
         # sending out a message telling init is finished
         # logger.debug('Config file name set to {}'.format(self.appConfig.GetLocalFileName(APP_NAME)))
+        pub.subscribe(self.clear_all, 'clear.all')
+
+    def clear_all(self):
+        self.loglist.clear_all()
+        self.settingspanel.clear_levels_emitters()
 
     def BuildMainStructure(self):
         ################################################################
@@ -206,9 +215,9 @@ class MainFrame(wx.Frame):
         right_sizer.Add(self.loglist, 1, wx.EXPAND)
         right_panel.SetSizerAndFit(right_sizer)
 
-        sp = SettingsPanel(splitterpanel1.BottomPanel)
+        self.settingspanel = SettingsPanel(splitterpanel1.BottomPanel)
         bottom_sizer = wx.BoxSizer(wx.HORIZONTAL)
-        bottom_sizer.Add(sp, 1, wx.EXPAND)
+        bottom_sizer.Add(self.settingspanel, 1, wx.EXPAND)
         splitterpanel1.BottomPanel.SetSizerAndFit(bottom_sizer)
 
 
@@ -247,16 +256,18 @@ class SettingsPanel(wx.Panel):
 
     def update_list(self, event):
         """This updates the list to show only elements with the values in the combo boxes."""
-
         # level is always something so we can find out at which level to show stuff
         level = self.cb_level.GetValue()
         emitter = self.cb_emitter.GetValue()
         pub.sendMessage('list.filter', level=level, emitter=emitter)
 
     def show_all(self, event):
-        self.cb_level.SetValue('')
-        self.cb_emitter.SetValue('')
+        self.clear_levels_emitters()
         pub.sendMessage('list.filter', level=None, emitter=None)
+
+    def clear_levels_emitters(self):
+        self.cb_level.Clear()
+        self.cb_emitter.Clear()
 
     def update_loglevels(self, levels: Set = None):
         self.cb_level.Clear()
