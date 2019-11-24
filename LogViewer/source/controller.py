@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+the controller component
+"""
+
 import os
 from typing import Sequence, Set
 
@@ -7,9 +12,6 @@ from pubsub import pub
 from LogViewer.source.config import APP_LONG_NAME
 from LogViewer.source.gui import MainFrame
 from LogViewer.source.log_definition import logdefinitions
-
-example_PNP = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\PNP_trace.log'
-example_VW = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\VW_trace.log'
 
 
 class Controller:
