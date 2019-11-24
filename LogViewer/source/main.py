@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-main.py for the package VW
+entry point
 """
 
 import os.path

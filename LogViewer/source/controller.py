@@ -6,6 +6,7 @@ from pubsub import pub
 
 from LogViewer.source.config import APP_LONG_NAME
 from LogViewer.source.gui import MainFrame
+from LogViewer.source.log_definition import logdefinitions
 
 example_PNP = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\PNP_trace.log'
 example_VW = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\VW_trace.log'
@@ -40,10 +41,10 @@ class Controller:
         """
         logs = Node(name='Logs')  # the tree holding the available logs
         # trying all known log descriptors
-        for ld_class in WV_descriptor, PNP_descriptor:
-            ld = ld_class(parent=logs)
+        for logdef in logdefinitions:
+            ld = LogDescriptor(parent=logs, **logdef)
             for filename in os.listdir(logdir):
-                if ld.isValidFile(logfile=filename):
+                if ld.isValidFile(logfile=filename, separator=ld.separator, name=ld.name):
                     _log = Log(logfile=os.path.join(LOGPATH, filename), parent=ld)
 
         return logs
@@ -63,28 +64,28 @@ class Controller:
 
 
 class LogDescriptor(NodeMixin):
-    entry_structure = None
-    separator = None
-    name = None
 
     def __init__(self, parent=None, entry_structure: Sequence[str] = (), separator: str = None, name: str = None):
         """
         Holds basic information required to handle logs: structure, field separator, name etc
         """
         self.parent = parent
+        self.entry_structure = entry_structure
+        self.separator = separator
+        self.name = name
 
-    @classmethod
-    def isValidFile(cls, logfile: str = None):
+    @staticmethod
+    def isValidFile(logfile: str = None, separator: str = None, name: str = None):
         """Tells if the file provided is a valid file for self.descriptor"""
 
         first_line = Log.read_logfile(logfile=os.path.join(LOGPATH, logfile))[0]
 
         # trying, using the provided separator
         try:
-            entry = Log.parse_entry(entry=first_line, separator=cls.separator)
+            entry = Log.parse_entry(entry=first_line, separator=separator)
         except ValueError:
             return False
-        if cls.name not in entry:
+        if name not in entry:
             return False
 
         return True
@@ -161,15 +162,3 @@ class Log(NodeMixin):
         Returns a set with the emitter names in it, as found in the logfile provided.
         """
         return self.get_field_values(fieldname='emitter')
-
-
-class WV_descriptor(LogDescriptor):
-    entry_structure = ('Timestamp', 'Session', 'Level', 'emitter', 'module', 'line', 'method', 'message')
-    separator = ' ++ '
-    name = 'VW'
-
-
-class PNP_descriptor(LogDescriptor):
-    entry_structure = ('Timestamp', 'Session', 'Level', 'emitter', 'module', 'line', 'method', 'message')
-    separator = ' -- '
-    name = 'PNP'

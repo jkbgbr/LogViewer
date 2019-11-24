@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+the view component
+"""
+
 from typing import Set
 
 import wx
@@ -7,11 +12,6 @@ import wx.lib.mixins.listctrl as listmix
 from pubsub import pub
 
 from LogViewer.source.config import APP_LONG_NAME, CONFIGFILE_PATH, APP_NAME
-
-# logger = logging.getLogger('gui')
-
-
-ID_Menu_CustomerInfo = wx.ID_ANY
 
 
 class MenuBar(wx.MenuBar):
@@ -47,7 +47,6 @@ class HSplitterPanel(wx.Panel):
 class Tree(wx.TreeCtrl):
 
     def __init__(self, parent):
-        # wx.TreeCtrl.__init__(self, parent, style=wx.TR_MULTIPLE | wx.TR_HAS_BUTTONS)
         wx.TreeCtrl.__init__(self, parent)
         self.tree = None
 
@@ -69,24 +68,17 @@ class Tree(wx.TreeCtrl):
             # Bind some interesting events
             self.Bind(wx.EVT_TREE_ITEM_COLLAPSED, self.OnItemCollapsed, self)
             self.Bind(wx.EVT_TREE_ITEM_EXPANDING, self.OnItemExpanding, self)
-            # self.Bind(wx.EVT_TREE_ITEM_RIGHT_CLICK, self.OnRightClick, self)
             self.Bind(wx.EVT_TREE_SEL_CHANGED, self.OnLeftClick, self)
             self.CollapseAll()
             self.ExpandAll()
 
     def OnLeftClick(self, event):
-        """
-        when a tree node is left-clicked, we recreate the attribute selected_items that holds the selected items
-        this is then pubsubbed so the relevant data can be shown at once
-        """
         pub.sendMessage('tree.selected', log=self.GetItemData(event.GetItem()))
 
     def OnItemCollapsed(self, evt):
-        # And remove them when collapsed as we don't need them any longer
         self.DeleteChildren(evt.GetItem())
 
     def OnItemExpanding(self, event):
-        # When the item is about to be expanded add the first level of child nodes
         self.Freeze()
         treenode = event.GetItem()
         self.AddTreeNodes(treenode)
@@ -128,7 +120,6 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
     def fill_list(self, level=None, emitter=None):
         """reads the lines from the file and fills the listctrl"""
         self.Freeze()
-        # self.all_lines = self.log.read_logfile(logfile=self.log.logfile)
         lines = self.log.read_logfile(logfile=self.log.logfile)
         if level:
             lines = [x for x in lines if level in x]
@@ -162,10 +153,10 @@ class MainFrame(wx.Frame):
 
         wx.Frame.__init__(self, parent, id, title, pos, size, style, *args, **kwargs)
 
-        # reading the config an applying it
+        # reading the config and applying it
         self.SetName(APP_LONG_NAME)
 
-        # # controls that will be defined later
+        # # # controls that will be defined later
         self.treectrl = None
         self.levellist = None
         self.loglist = None
@@ -215,11 +206,9 @@ class MainFrame(wx.Frame):
         right_sizer.Add(self.loglist, 1, wx.EXPAND)
         right_panel.SetSizerAndFit(right_sizer)
 
-        # self.levellist = wx.TextCtrl(splitterpanel1.BottomPanel, style=wx.TE_MULTILINE)
         sp = SettingsPanel(splitterpanel1.BottomPanel)
         bottom_sizer = wx.BoxSizer(wx.HORIZONTAL)
         bottom_sizer.Add(sp, 1, wx.EXPAND)
-        # bottom_sizer.Add(self.levellist, 1, wx.EXPAND)
         splitterpanel1.BottomPanel.SetSizerAndFit(bottom_sizer)
 
 
@@ -232,11 +221,8 @@ class SettingsPanel(wx.Panel):
         self.stat_1 = wx.StaticText(self, label='Show only logs from:')
         self.stat_2 = wx.StaticText(self, label='Level:')
         self.cb_emitter = wx.ComboBox(self, style=wx.CB_READONLY)
-        # self.stat_3 = wx.StaticText(self, label='to')
         self.cb_level = wx.ComboBox(self, choices=(), style=wx.CB_READONLY)
-        # self.regen_button = wx.Button(self, label='Refresh')
         self.reset_button = wx.Button(self, label='Show all')
-        # self.clear_button = wx.Button(self, label='Clear all')
         self.statustext = wx.StaticText(self, label='')
 
         base_vbox = wx.BoxSizer(wx.VERTICAL)
@@ -246,13 +232,8 @@ class SettingsPanel(wx.Panel):
         self.upper.Add(self.cb_emitter, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
         self.upper.Add(self.stat_2, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
         self.upper.Add(self.cb_level, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
-        # self.upper.Add(self.stat_3, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
-        # self.upper.Add(self.mark_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
-        # self.upper.Add(self.regen_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
         self.upper.Add(self.reset_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
-        # self.upper.Add(self.clear_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
         self.upper.Add(self.statustext, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
-        # lower.Add(self.log, 1, flag=wx.GROW)
 
         base_vbox.Add(self.upper, 0)
         base_vbox.SetSizeHints(self)
