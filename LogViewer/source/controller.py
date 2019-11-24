@@ -48,10 +48,15 @@ class Controller:
 
         return logs
 
-    def set_active_log(self, data):
-        if isinstance(data, Log):
-            self._active_log = data
-            self.view.loglist.fill_list(self._active_log)
+    def set_active_log(self, log):
+        if isinstance(log, Log):
+            self._active_log = log
+            self.view.loglist.set_log(self._active_log)
+            self.view.loglist.fill_list()
+
+            pub.sendMessage('list.levels', levels=self._active_log.get_levels())
+            pub.sendMessage('list.emitters', emitters=self._active_log.get_emitters())
+            pub.sendMessage('list.filled')
 
     def print_logtree(self):
         print(RenderTree(self.logs, style=ContStyle()))
@@ -123,20 +128,39 @@ class Log(NodeMixin):
             raise ValueError('No sparator "{}" found in entry "{}"'.format(separator, entry))
         return tuple(entry.split(separator))
 
-    def get_levels(self) -> Set[str]:
+    def get_field_values(self, fieldname: str = None, lines: Sequence[str] = None) -> Set[str]:
         """
-        Returns a set with the level names in it, as found in the logfile provided.
+        Returns a set with the unique names found in the given field. If lines is provided, only those will be
+        taken into account
         """
-        # getting all lines, parsed
-        parsed = [self.parse_entry(x) for x in self.read_logfile()]
-
-        # finding the level
+        # finding the level. If nothing found, an empty set is returned
         structure = [x.lower() for x in self.descriptor.entry_structure]
-        level_position = structure.index('level')
+        try:
+            level_position = structure.index(fieldname)
+        except IndexError:
+            return set()
+
+        if lines is None:
+            lines = self.read_logfile(logfile=self.logfile)
+
+        # getting all lines, parsed
+        parsed = [self.parse_entry(x, separator=self.separator) for x in lines]
 
         # retreiving all unique values
         _ret = {x[level_position] for x in parsed}
         return _ret
+
+    def get_levels(self) -> Set[str]:
+        """
+        Returns a set with the level names in it, as found in the logfile provided.
+        """
+        return self.get_field_values(fieldname='level')
+
+    def get_emitters(self) -> Set[str]:
+        """
+        Returns a set with the emitter names in it, as found in the logfile provided.
+        """
+        return self.get_field_values(fieldname='emitter')
 
 
 class WV_descriptor(LogDescriptor):

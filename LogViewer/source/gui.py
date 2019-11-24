@@ -1,4 +1,4 @@
-
+from typing import Set
 
 import wx
 import wx.lib.inspection
@@ -33,6 +33,7 @@ class HSplitterPanel(wx.Panel):
         """Constructor"""
         wx.Panel.__init__(self, parent)
         splitter = wx.SplitterWindow(self, style=wx.SP_3D | wx.SP_LIVE_UPDATE)
+        splitter.SetMinimumPaneSize(200)
         self.TopPanel = wx.Panel(splitter)
         self.BottomPanel = wx.Panel(splitter)
 
@@ -78,7 +79,7 @@ class Tree(wx.TreeCtrl):
         when a tree node is left-clicked, we recreate the attribute selected_items that holds the selected items
         this is then pubsubbed so the relevant data can be shown at once
         """
-        pub.sendMessage('tree.selected', data=self.GetItemData(event.GetItem()))
+        pub.sendMessage('tree.selected', log=self.GetItemData(event.GetItem()))
 
     def OnItemCollapsed(self, evt):
         # And remove them when collapsed as we don't need them any longer
@@ -107,6 +108,12 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
                                       style=wx.LC_REPORT | wx.LC_VIRTUAL | wx.LC_HRULES | wx.LC_VRULES)
         self.log = None
         self.all_lines = None
+        pub.subscribe(self.set_log, 'tree.selected')
+        pub.subscribe(self.set_columns, 'list.filled')
+        pub.subscribe(self.fill_list, 'list.filter')
+
+    def set_log(self, log):
+        self.log = log
 
     def build_columns(self, log=None):
         self.Freeze()
@@ -118,12 +125,27 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
     def OnGetItemText(self, item, column):
         return self.log.parse_entry(self.all_lines[item], separator=self.log.separator)[column]
 
-    def fill_list(self, log=None):
+    def fill_list(self, level=None, emitter=None):
         """reads the lines from the file and fills the listctrl"""
-        self.log = log
-        self.all_lines = log.read_logfile(logfile=log.logfile)
-        self.build_columns(log)
-        self.SetItemCount(len(self.all_lines))
+        self.Freeze()
+        # self.all_lines = self.log.read_logfile(logfile=self.log.logfile)
+        lines = self.log.read_logfile(logfile=self.log.logfile)
+        if level:
+            lines = [x for x in lines if level in x]
+        if emitter:
+            lines = [x for x in lines if emitter in x]
+
+        self.all_lines = lines
+        self.build_columns(self.log)
+        self.SetItemCount(len(lines))
+        pub.sendMessage('list.filled')
+        self.Thaw()
+
+    def set_columns(self):
+        self.Freeze()
+        for col in range(self.GetColumnCount()):
+            self.SetColumnWidth(col, wx.LIST_AUTOSIZE_USEHEADER)
+        self.Thaw()
 
 
 class MainFrame(wx.Frame):
@@ -172,6 +194,7 @@ class MainFrame(wx.Frame):
         ################################################################
         # Define mainsplitter as child of Frame and add H and VSplitterPanel as children
         mainsplitter = wx.SplitterWindow(self, style=wx.SP_3D | wx.SP_LIVE_UPDATE)
+        mainsplitter.SetMinimumPaneSize(200)
         splitterpanel1 = HSplitterPanel(mainsplitter)
 
         right_panel = wx.Panel(mainsplitter)
@@ -192,10 +215,77 @@ class MainFrame(wx.Frame):
         right_sizer.Add(self.loglist, 1, wx.EXPAND)
         right_panel.SetSizerAndFit(right_sizer)
 
-        self.levellist = wx.TextCtrl(splitterpanel1.BottomPanel, style=wx.TE_MULTILINE)
+        # self.levellist = wx.TextCtrl(splitterpanel1.BottomPanel, style=wx.TE_MULTILINE)
+        sp = SettingsPanel(splitterpanel1.BottomPanel)
         bottom_sizer = wx.BoxSizer(wx.HORIZONTAL)
-        bottom_sizer.Add(self.levellist, 1, wx.EXPAND)
+        bottom_sizer.Add(sp, 1, wx.EXPAND)
+        # bottom_sizer.Add(self.levellist, 1, wx.EXPAND)
         splitterpanel1.BottomPanel.SetSizerAndFit(bottom_sizer)
+
+
+class SettingsPanel(wx.Panel):
+
+    def __init__(self, parent=None, id=wx.ID_ANY, pos=wx.DefaultPosition, size=wx.DefaultSize,
+                 style=wx.TAB_TRAVERSAL, name=''):
+        super(SettingsPanel, self).__init__(parent, id=id, pos=pos, size=size, style=style, name=name)
+
+        self.stat_1 = wx.StaticText(self, label='Show only logs from:')
+        self.stat_2 = wx.StaticText(self, label='Level:')
+        self.cb_emitter = wx.ComboBox(self, style=wx.CB_READONLY)
+        # self.stat_3 = wx.StaticText(self, label='to')
+        self.cb_level = wx.ComboBox(self, choices=(), style=wx.CB_READONLY)
+        # self.regen_button = wx.Button(self, label='Refresh')
+        self.reset_button = wx.Button(self, label='Show all')
+        # self.clear_button = wx.Button(self, label='Clear all')
+        self.statustext = wx.StaticText(self, label='')
+
+        base_vbox = wx.BoxSizer(wx.VERTICAL)
+        self.upper = wx.WrapSizer(wx.VERTICAL)
+
+        self.upper.Add(self.stat_1, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        self.upper.Add(self.cb_emitter, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        self.upper.Add(self.stat_2, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        self.upper.Add(self.cb_level, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        # self.upper.Add(self.stat_3, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        # self.upper.Add(self.mark_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        # self.upper.Add(self.regen_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        self.upper.Add(self.reset_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        # self.upper.Add(self.clear_button, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        self.upper.Add(self.statustext, 0, flag=wx.ALL | wx.ALIGN_CENTRE_VERTICAL, border=5)
+        # lower.Add(self.log, 1, flag=wx.GROW)
+
+        base_vbox.Add(self.upper, 0)
+        base_vbox.SetSizeHints(self)
+        self.SetSizer(base_vbox)
+
+        pub.subscribe(self.update_loglevels, 'list.levels')
+        pub.subscribe(self.update_emitters, 'list.emitters')
+
+        self.Bind(wx.EVT_COMBOBOX, self.update_list)
+        self.Bind(wx.EVT_BUTTON, self.show_all, self.reset_button)
+
+    def update_list(self, event):
+        """This updates the list to show only elements with the values in the combo boxes."""
+
+        # level is always something so we can find out at which level to show stuff
+        level = self.cb_level.GetValue()
+        emitter = self.cb_emitter.GetValue()
+        pub.sendMessage('list.filter', level=level, emitter=emitter)
+
+    def show_all(self, event):
+        self.cb_level.SetValue('')
+        self.cb_emitter.SetValue('')
+        pub.sendMessage('list.filter', level=None, emitter=None)
+
+    def update_loglevels(self, levels: Set = None):
+        self.cb_level.Clear()
+        for i in levels:
+            self.cb_level.Append(i)
+
+    def update_emitters(self, emitters: Set = None):
+        self.cb_emitter.Clear()
+        for i in emitters:
+            self.cb_emitter.Append(i)
 
 
 if __name__ == '__main__':
