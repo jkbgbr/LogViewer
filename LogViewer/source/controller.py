@@ -67,7 +67,7 @@ class LogDescriptor(NodeMixin):
     separator = None
     name = None
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, entry_structure: Sequence[str] = (), separator: str = None, name: str = None):
         """
         Holds basic information required to handle logs: structure, field separator, name etc
         """
