@@ -11,8 +11,6 @@ from LogViewer.source.log_definition import logdefinitions
 example_PNP = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\PNP_trace.log'
 example_VW = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs\\VW_trace.log'
 
-LOGPATH = 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\LogViewer\\Logs'
-
 
 class Controller:
 
@@ -23,13 +21,11 @@ class Controller:
         self._active_log = None
         pub.subscribe(self.set_active_log, 'tree.selected')
 
-    def detect_logs(self, logdir: os.path.abspath = LOGPATH):
+    def detect_logs(self):
         """
         Looks into the path provided and gets all files, then tries to parse them.
         Populates a tree based on the types of logs found
 
-        :param logdir:
-        :type logdir:
         :return:
         :rtype:
         """
@@ -37,9 +33,10 @@ class Controller:
         # trying all log descriptors found in log_definition.py
         for logdef in logdefinitions:
             ld = LogDescriptor(parent=logs, **logdef)
-            for filename in os.listdir(logdir):
-                if ld.isValidFile(logfile=filename, separator=ld.separator, name=ld.name):
-                    _log = Log(logfile=os.path.join(LOGPATH, filename), parent=ld)
+            for filename in os.listdir(ld.directory_path):
+                fullpath = os.path.join(ld.directory_path, filename)
+                if ld.isValidFile(logfile=fullpath, separator=ld.separator, name=ld.name):
+                    _log = Log(logfile=fullpath, parent=ld)
 
         return logs
 
@@ -61,7 +58,12 @@ class Controller:
 
 class LogDescriptor(NodeMixin):
 
-    def __init__(self, parent=None, entry_structure: Sequence[str] = (), separator: str = None, name: str = None):
+    def __init__(self,
+                 parent=None,
+                 entry_structure: Sequence[str] = (),
+                 separator: str = None,
+                 name: str = None,
+                 directory_path: str = None):
         """
         Holds basic information required to handle logs: structure, field separator, name etc
         """
@@ -69,12 +71,13 @@ class LogDescriptor(NodeMixin):
         self.entry_structure = entry_structure
         self.separator = separator
         self.name = name
+        self.directory_path = directory_path
 
     @staticmethod
     def isValidFile(logfile: str = None, separator: str = None, name: str = None):
         """Tells if the file provided is a valid file for self.descriptor"""
 
-        first_line = Log.read_logfile(logfile=os.path.join(LOGPATH, logfile))[0]
+        first_line = Log.read_logfile(logfile)[0]
 
         # trying, using the provided separator
         try:

@@ -100,7 +100,6 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
                                       style=wx.LC_REPORT | wx.LC_VIRTUAL | wx.LC_HRULES | wx.LC_VRULES)
         self.log = None
         self.all_lines = None
-        # pub.subscribe(self.set_log, 'tree.selected')
         pub.subscribe(self.set_columns, 'list.filled')
         pub.subscribe(self.fill_list, 'list.filter')
 
@@ -262,7 +261,8 @@ class SettingsPanel(wx.Panel):
         pub.sendMessage('list.filter', level=level, emitter=emitter)
 
     def show_all(self, event):
-        self.clear_levels_emitters()
+        self.cb_level.SetValue('')
+        self.cb_emitter.SetValue('')
         pub.sendMessage('list.filter', level=None, emitter=None)
 
     def clear_levels_emitters(self):
