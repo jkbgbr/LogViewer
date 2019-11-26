@@ -38,7 +38,7 @@ class Controller:
             for filename in os.listdir(ld.directory_path):
                 fullpath = os.path.join(ld.directory_path, filename)
                 try:
-                    if ld.isValidFile(logfile=fullpath, separator=ld.separator, name=ld.name):
+                    if ld.isValidFile(logfile=fullpath, separator=ld.separator):
                         _log = Log(logfile=fullpath, parent=ld)
                 except (UnicodeDecodeError, PermissionError):
                     pass
@@ -79,7 +79,7 @@ class LogDescriptor(NodeMixin):
         self.directory_path = directory_path
 
     @staticmethod
-    def isValidFile(logfile: str = None, separator: str = None, name: str = None):
+    def isValidFile(logfile: str = None, separator: str = None):
         """Tells if the file provided is a valid file for self.descriptor"""
 
         first_line = Log.read_logfile(logfile)[0]
@@ -88,8 +88,6 @@ class LogDescriptor(NodeMixin):
         try:
             entry = Log.parse_entry(entry=first_line, separator=separator)
         except ValueError:
-            return False
-        if name not in entry:
             return False
 
         return True
