@@ -37,8 +37,11 @@ class Controller:
             ld = LogDescriptor(parent=logs, **logdef)
             for filename in os.listdir(ld.directory_path):
                 fullpath = os.path.join(ld.directory_path, filename)
-                if ld.isValidFile(logfile=fullpath, separator=ld.separator, name=ld.name):
-                    _log = Log(logfile=fullpath, parent=ld)
+                try:
+                    if ld.isValidFile(logfile=fullpath, separator=ld.separator, name=ld.name):
+                        _log = Log(logfile=fullpath, parent=ld)
+                except (UnicodeDecodeError, PermissionError):
+                    pass
 
         return logs
 
@@ -139,7 +142,9 @@ class Log(NodeMixin):
         structure = [x.lower() for x in self.descriptor.entry_structure]
         try:
             level_position = structure.index(fieldname)
-        except IndexError:
+        except IndexError:  # there is a field called fieldname in the logs but currently none is found
+            return set()
+        except ValueError:  # no field called fieldname
             return set()
 
         if lines is None:
