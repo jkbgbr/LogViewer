@@ -83,13 +83,12 @@ class LogDescriptor(NodeMixin):
     def isValidFile(logfile: str = None, separator: str = None):
         """Tells if the file provided is a valid file for self.descriptor"""
 
-        log = Log(logfile=logfile)
-        first_line = log.read_logfile(logfile)[0]
+        first_line = Log.read_logfile(logfile)[0]
 
         # trying, using the provided separator
         try:
-            entry = log.parse_entry(entry=first_line, separator=separator)
-        except ValueError:
+            entry = Log.parse_entry(entry=first_line, separator=separator)
+        except ValueError:  # parsing fails as the separator was not found in the file
             return False
 
         return True
@@ -123,11 +122,18 @@ class Log(NodeMixin):
         with open(logfile, 'r') as f:
             lines = f.readlines()
         lines = tuple([x.strip() for x in lines])
+
+        # removing the empty lines
+        lines = [x for x in lines if x]
+
         return lines
 
-    def parse_entry(self, entry: str = None, separator: str = None) -> Sequence[str]:
+    @classmethod
+    def parse_entry(cls, entry: str = None, separator: str = None) -> Sequence[str]:
         """Disassembles a log entry either using the provided separator or using the own"""
 
+        # failing finding the seaparator means: the file does not belong to the descriptor used to parse.
+        # we fail here and catch the exception e.g. in isValidFile
         if separator not in entry:
             raise ValueError('No separator "{}" found in entry "{}"'.format(separator, entry))
 
