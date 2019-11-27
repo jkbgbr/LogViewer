@@ -117,7 +117,13 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
         self.Thaw()
 
     def OnGetItemText(self, item, column):
-        return self.log.parse_entry(self.all_lines[item], separator=self.log.separator)[column]
+        _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator)
+        try:
+            return _ret[column]
+        except (IndexError, TypeError):
+            print('Tried to access item {} in column {} with separator {}. Did not succeed.'.format(item, column, self.log.separator))
+            print('The row to parse was: "{}"'.format(self.all_lines[item]))
+            print('The parsed result is: "{}"'.format(_ret))
 
     def fill_list(self, level=None, emitter=None):
         """reads the lines from the file and fills the listctrl"""

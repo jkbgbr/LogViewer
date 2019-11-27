@@ -3,13 +3,14 @@
 the controller component
 """
 
+import re
 import os
 from typing import Sequence, Set
 
 from anytree import NodeMixin, RenderTree, ContStyle, Node
 from pubsub import pub
 
-from LogViewer.source.config import APP_LONG_NAME
+from LogViewer.source.config import APP_LONG_NAME, UNDEFINED
 from LogViewer.source.gui import MainFrame
 from LogViewer.source.log_definition import logdefinitions
 
@@ -82,11 +83,12 @@ class LogDescriptor(NodeMixin):
     def isValidFile(logfile: str = None, separator: str = None):
         """Tells if the file provided is a valid file for self.descriptor"""
 
-        first_line = Log.read_logfile(logfile)[0]
+        log = Log(logfile=logfile)
+        first_line = log.read_logfile(logfile)[0]
 
         # trying, using the provided separator
         try:
-            entry = Log.parse_entry(entry=first_line, separator=separator)
+            entry = log.parse_entry(entry=first_line, separator=separator)
         except ValueError:
             return False
 
@@ -123,13 +125,43 @@ class Log(NodeMixin):
         lines = tuple([x.strip() for x in lines])
         return lines
 
-    @classmethod
-    def parse_entry(cls, entry: str = None, separator: str = None) -> Sequence[str]:
+    def parse_entry(self, entry: str = None, separator: str = None) -> Sequence[str]:
         """Disassembles a log entry either using the provided separator or using the own"""
 
         if separator not in entry:
-            raise ValueError('No sparator "{}" found in entry "{}"'.format(separator, entry))
-        return tuple(entry.split(separator))
+            raise ValueError('No separator "{}" found in entry "{}"'.format(separator, entry))
+
+        # if the last field - the message - is empty so the row to be parsed ends with a separator
+        # if the separator is fully there
+        fixed_flag = False
+        if entry.endswith(separator):
+            entry += UNDEFINED
+            fixed_flag = True
+
+        # if the separator is partially there we add a whitespace. Note: this does not heal the entry in all cases
+        if entry.endswith(separator.strip()) and not fixed_flag:
+            entry += ' '
+            entry += UNDEFINED
+
+        # splitting
+        _ret = tuple(entry.split(separator))
+
+        # checking for the result - the split tuple should the number of elements +1 as the number of separators
+        expected_length = len([m.start() for m in re.finditer(separator, entry)]) + 1
+
+        if len(_ret) < expected_length:
+            print('is: {}, should be: {}'.format(len(_ret), expected_length))
+            while len(_ret) < expected_length:
+                _ret += (UNDEFINED, )
+
+        elif len(_ret) > expected_length:
+            print('is: {}, should be: {}'.format(len(_ret), expected_length))
+            _ret = tuple(_ret[0:expected_length])
+
+        else:
+            pass
+
+        return _ret
 
     def get_field_values(self, fieldname: str = None, lines: Sequence[str] = None) -> Set[str]:
         """

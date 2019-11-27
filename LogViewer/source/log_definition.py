@@ -4,7 +4,7 @@ log definitions
 """
 
 pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'),
-       'separator': ' - ',
+       'separator': ' -- ',
        'name': 'PNP',
        'directory_path': 'V:\\KO\\NozzlePro'}
 

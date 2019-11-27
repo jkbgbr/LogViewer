@@ -21,3 +21,5 @@ else:
 LOGLEVELS = ('TRACE', 'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL')  # used in the log window for filtering
 
 CONFIGFILE_PATH = os.path.join(CONFIG_DIR, CONFIGFILE_NAME)
+
+UNDEFINED = '!!!'  # the string put in the list if the log entry is not long enough. Happens if the log message is empty
