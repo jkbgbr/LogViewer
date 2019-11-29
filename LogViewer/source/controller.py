@@ -36,8 +36,8 @@ class Controller:
         # trying all log descriptors found in log_definition.py
         for logdef in logdefinitions:
             ld = LogDescriptor(parent=logs, **logdef)
-            for filename in os.listdir(ld.directory_path):
-                fullpath = os.path.join(ld.directory_path, filename)
+            for filename in os.listdir(ld.logdir_path):
+                fullpath = os.path.join(ld.logdir_path, filename)
                 try:
                     if ld.isValidFile(logfile=fullpath, separator=ld.separator):
                         _log = Log(logfile=fullpath, parent=ld)
@@ -69,7 +69,7 @@ class LogDescriptor(NodeMixin):
                  entry_structure: Sequence[str] = (),
                  separator: str = None,
                  name: str = None,
-                 directory_path: str = None):
+                 logdir_path: str = None):
         """
         Holds basic information required to handle logs: structure, field separator, name etc
         """
@@ -77,7 +77,7 @@ class LogDescriptor(NodeMixin):
         self.entry_structure = entry_structure
         self.separator = separator
         self.name = name
-        self.directory_path = directory_path
+        self.logdir_path = logdir_path
 
     @staticmethod
     def isValidFile(logfile: str = None, separator: str = None):
