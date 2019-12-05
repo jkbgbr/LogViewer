@@ -55,6 +55,7 @@ class Controller:
             pub.sendMessage('list.levels', levels=self._active_log.get_levels())
             pub.sendMessage('list.emitters', emitters=self._active_log.get_emitters())
             pub.sendMessage('list.filled')
+            pub.sendMessage('statusbar.logsummary')
         else:
             pub.sendMessage('clear.all')
 
@@ -168,6 +169,16 @@ class Log(NodeMixin):
             pass
 
         return _ret
+
+    def get_log_summary(self):
+        """returns a summary that can be used e.g. in the statusbar"""
+        levels = self.get_levels()
+
+        lines = self.read_logfile(logfile=self.logfile)
+
+        for level in levels:
+            print(level)
+
 
     def get_field_values(self, fieldname: str = None, lines: Sequence[str] = None) -> Set[str]:
         """
