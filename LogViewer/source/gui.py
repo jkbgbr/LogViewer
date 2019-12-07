@@ -3,7 +3,7 @@
 the view component
 """
 
-from typing import Set
+from typing import Set, Dict
 
 import wx
 import wx.lib.inspection
@@ -190,10 +190,21 @@ class MainFrame(wx.Frame):
         # sending out a message telling init is finished
         # logger.debug('Config file name set to {}'.format(self.appConfig.GetLocalFileName(APP_NAME)))
         pub.subscribe(self.clear_all, 'clear.all')
+        pub.subscribe(self.show_logsummary, 'statusbar.logsummary')
+
+    def show_logsummary(self, logsum: Dict = None):
+
+        txt = '{} sections, '.format(logsum['sections'])
+        txt += '{} entries, '.format(logsum['entries'])
+        txt += ' | '.join(['{}: {}'.format(k, v) for k, v in logsum['messages_per_level'].items()])
+
+        self.sb.SetStatusText(txt)
+        # print(self.sb)
 
     def clear_all(self):
         self.loglist.clear_all()
         self.settingspanel.clear_levels_emitters()
+        self.sb.SetStatusText('')
 
     def BuildMainStructure(self):
         ################################################################

@@ -24,7 +24,8 @@ class Controller:
         self._active_log = None
         pub.subscribe(self.set_active_log, 'tree.selected')
 
-    def detect_logs(self):
+    @classmethod
+    def detect_logs(cls):
         """
         Looks into the path provided and gets all files, then tries to parse them.
         Populates a tree based on the types of logs found
@@ -55,7 +56,7 @@ class Controller:
             pub.sendMessage('list.levels', levels=self._active_log.get_levels())
             pub.sendMessage('list.emitters', emitters=self._active_log.get_emitters())
             pub.sendMessage('list.filled')
-            pub.sendMessage('statusbar.logsummary')
+            pub.sendMessage('statusbar.logsummary', logsum=self._active_log.get_log_summary())
         else:
             pub.sendMessage('clear.all')
 
@@ -69,6 +70,7 @@ class LogDescriptor(NodeMixin):
                  parent=None,
                  entry_structure: Sequence[str] = (),
                  separator: str = None,
+                 section_start: str = None,
                  name: str = None,
                  logdir_path: str = None):
         """
@@ -77,6 +79,7 @@ class LogDescriptor(NodeMixin):
         self.parent = parent
         self.entry_structure = entry_structure
         self.separator = separator
+        self.section_start = section_start
         self.name = name
         self.logdir_path = logdir_path
 
@@ -173,12 +176,20 @@ class Log(NodeMixin):
     def get_log_summary(self):
         """returns a summary that can be used e.g. in the statusbar"""
         levels = self.get_levels()
-
         lines = self.read_logfile(logfile=self.logfile)
+        _ret = {'messages_per_level': {}, 'sections': 0, 'entries': 0}
 
+        # getting the number of entries
+        _ret['entries'] = len(lines)
+
+        # getting the info about the number of entries for each level
         for level in levels:
-            print(level)
+            _ret['messages_per_level'][level] = len([x for x in lines if level in x])
 
+        # getting the number of sections
+        _ret['sections'] = len([x for x in lines if self.descriptor.section_start in x])
+
+        return _ret
 
     def get_field_values(self, fieldname: str = None, lines: Sequence[str] = None) -> Set[str]:
         """
@@ -215,3 +226,13 @@ class Log(NodeMixin):
         Returns a set with the emitter names in it, as found in the logfile provided.
         """
         return self.get_field_values(fieldname='emitter')
+
+
+if __name__ == '__main__':
+    pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'),
+           'separator': ' -- ',
+           'name': 'PyNozzlePro',
+           'logdir_path': 'V:\\KO\\NozzlePro'}
+
+    ld = LogDescriptor(parent=None, )
+    print(logs)

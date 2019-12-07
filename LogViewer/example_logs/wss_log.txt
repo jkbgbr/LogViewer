@@ -1,763 +1,530 @@
-2019-11-21 13:50:03,784 INFO --------------------- STARTING ---------------------
-2019-11-21 13:50:03,784 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-21 13:50:03,785 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage - Kopie.xlsm
-2019-11-21 13:50:43,572 INFO Fertig!
-2019-11-21 13:50:43,573 DEBUG Gelesen aus Zeile 3: {'job_nr': '19.280.02', 'pos': 48}
-2019-11-21 13:50:43,573 DEBUG Nächste Zeile: 4
-2019-11-21 13:50:43,573 DEBUG Gelesen aus Zeile 4: {'job_nr': '19.280.02', 'pos': 49}
-2019-11-21 13:50:43,574 DEBUG Nächste Zeile: 5
-2019-11-21 13:50:43,585 DEBUG Gelesen aus Zeile 5: {'job_nr': '19.280.02', 'pos': 51}
-2019-11-21 13:50:43,585 DEBUG Nächste Zeile: 6
-2019-11-21 13:50:43,586 DEBUG Gelesen aus Zeile 6: {'job_nr': '19.280.04', 'pos': 47}
-2019-11-21 13:50:43,586 DEBUG Nächste Zeile: 7
-2019-11-21 13:50:43,587 DEBUG Gelesen aus Zeile 7: {'job_nr': '19.280.04', 'pos': 48}
-2019-11-21 13:50:43,587 DEBUG Nächste Zeile: 8
-2019-11-21 13:50:43,587 DEBUG Gelesen aus Zeile 8: {'job_nr': '19.280.04', 'pos': 49}
-2019-11-21 13:50:43,588 DEBUG Nächste Zeile: 9
-2019-11-21 13:50:43,588 DEBUG Gelesen aus Zeile 9: {'job_nr': '19.280.06', 'pos': 47}
-2019-11-21 13:50:43,588 DEBUG Nächste Zeile: 10
-2019-11-21 13:50:43,589 DEBUG Gelesen aus Zeile 10: {'job_nr': '19.280.06', 'pos': 48}
-2019-11-21 13:50:43,589 DEBUG Nächste Zeile: 11
-2019-11-21 13:50:43,589 DEBUG Gelesen aus Zeile 11: {'job_nr': '19.280.06', 'pos': 48}
-2019-11-21 13:50:43,590 DEBUG Nächste Zeile: 12
-2019-11-21 13:50:43,590 DEBUG Gelesen aus Zeile 12: {'job_nr': '19.280.08', 'pos': 100}
-2019-11-21 13:50:43,590 DEBUG Nächste Zeile: 13
-2019-11-21 13:50:43,591 DEBUG Gelesen aus Zeile 13: {'job_nr': '19.280.08', 'pos': 101}
-2019-11-21 13:50:43,591 DEBUG Nächste Zeile: 14
-2019-11-21 13:50:43,591 DEBUG Gelesen aus Zeile 14: {'job_nr': '19.280.08', 'pos': 127}
-2019-11-21 13:50:43,592 DEBUG Nächste Zeile: 15
-2019-11-21 13:50:43,592 DEBUG Gelesen aus Zeile 15: {'job_nr': '19.280.08', 'pos': 128}
-2019-11-21 13:50:43,592 DEBUG Nächste Zeile: 16
-2019-11-21 13:50:43,593 DEBUG Gelesen aus Zeile 16: {'job_nr': '19.280.09', 'pos': 100}
-2019-11-21 13:50:43,593 DEBUG Nächste Zeile: 17
-2019-11-21 13:50:43,593 DEBUG Gelesen aus Zeile 17: {'job_nr': '19.280.09', 'pos': 101}
-2019-11-21 13:50:43,593 DEBUG Nächste Zeile: 18
-2019-11-21 13:50:43,594 DEBUG Gelesen aus Zeile 18: {'job_nr': '19.280.09', 'pos': 127}
-2019-11-21 13:50:43,594 DEBUG Nächste Zeile: 19
-2019-11-21 13:50:43,594 DEBUG Gelesen aus Zeile 19: {'job_nr': '19.280.09', 'pos': 128}
-2019-11-21 13:50:43,595 DEBUG Nächste Zeile: 20
-2019-11-21 13:50:43,595 DEBUG Gelesen aus Zeile 20: {'job_nr': '19.595.01', 'pos': 4}
-2019-11-21 13:50:43,595 DEBUG Nächste Zeile: 21
-2019-11-21 13:50:43,596 DEBUG Gelesen aus Zeile 21: {'job_nr': '19.595.01', 'pos': 5}
-2019-11-21 13:50:43,596 DEBUG Nächste Zeile: 22
-2019-11-21 13:50:43,596 INFO Habe 19 positionen gefunden.
-2019-11-21 13:50:43,597 DEBUG Arbeite mit 19.280.02
-2019-11-21 13:50:43,597 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,597 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,617 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:50:43,641 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:50:43,645 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:50:43,667 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:50:43,670 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:50:43,701 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,711 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,712 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,721 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,722 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,730 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,730 DEBUG Arbeite mit 19.280.02
-2019-11-21 13:50:43,730 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,731 DEBUG Sammle Datei(en) für Position 49 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,733 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt
-2019-11-21 13:50:43,734 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:50:43,735 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt
-2019-11-21 13:50:43,737 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt
-2019-11-21 13:50:43,740 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,748 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,749 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,757 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,757 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,765 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,766 DEBUG Arbeite mit 19.280.02
-2019-11-21 13:50:43,766 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,766 DEBUG Sammle Datei(en) für Position 51 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,769 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.51.ipt
-2019-11-21 13:50:43,774 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.51.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,783 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,783 DEBUG Arbeite mit 19.280.04
-2019-11-21 13:50:43,784 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,784 DEBUG Sammle Datei(en) für Position 47 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,786 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt
-2019-11-21 13:50:43,787 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:50:43,788 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt
-2019-11-21 13:50:43,789 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:50:43,790 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt
-2019-11-21 13:50:43,791 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:50:43,794 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,803 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,803 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,811 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,812 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,820 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,821 DEBUG Arbeite mit 19.280.04
-2019-11-21 13:50:43,821 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,821 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,823 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:50:43,825 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:50:43,826 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:50:43,827 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:50:43,828 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:50:43,831 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,832 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,834 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,834 DEBUG Arbeite mit 19.280.04
-2019-11-21 13:50:43,835 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,835 DEBUG Sammle Datei(en) für Position 49 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,837 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt
-2019-11-21 13:50:43,837 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:50:43,839 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt
-2019-11-21 13:50:43,840 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt
-2019-11-21 13:50:43,844 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt ist schon kopiert worden
-2019-11-21 13:50:43,846 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt ist schon kopiert worden
-2019-11-21 13:50:43,847 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt ist schon kopiert worden
-2019-11-21 13:50:43,848 DEBUG Arbeite mit 19.280.06
-2019-11-21 13:50:43,848 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,848 DEBUG Sammle Datei(en) für Position 47 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,850 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt
-2019-11-21 13:50:43,851 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:50:43,852 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt
-2019-11-21 13:50:43,853 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:50:43,854 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt
-2019-11-21 13:50:43,855 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:50:43,858 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt ist schon kopiert worden
-2019-11-21 13:50:43,860 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt ist schon kopiert worden
-2019-11-21 13:50:43,861 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt ist schon kopiert worden
-2019-11-21 13:50:43,862 DEBUG Arbeite mit 19.280.06
-2019-11-21 13:50:43,862 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,862 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,864 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:50:43,865 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:50:43,866 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:50:43,868 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:50:43,868 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:50:43,872 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,873 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,874 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,874 DEBUG Arbeite mit 19.280.06
-2019-11-21 13:50:43,875 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,875 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,877 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:50:43,878 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:50:43,879 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:50:43,880 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:50:43,881 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:50:43,884 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,885 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,887 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:50:43,887 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:50:43,887 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,888 DEBUG Sammle Datei(en) für Position 100 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,892 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt
-2019-11-21 13:50:43,893 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt
-2019-11-21 13:50:43,894 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt
-2019-11-21 13:50:43,896 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,904 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,905 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,913 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,914 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,922 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,922 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:50:43,922 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,923 DEBUG Sammle Datei(en) für Position 101 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,928 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt
-2019-11-21 13:50:43,929 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt
-2019-11-21 13:50:43,930 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt
-2019-11-21 13:50:43,931 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,940 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,941 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,950 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,950 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,959 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,959 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:50:43,960 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,960 DEBUG Sammle Datei(en) für Position 127 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,966 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt
-2019-11-21 13:50:43,967 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt
-2019-11-21 13:50:43,968 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,977 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,978 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:43,986 DEBUG Kopieren fertig!
-2019-11-21 13:50:43,986 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:50:43,987 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:43,987 DEBUG Sammle Datei(en) für Position 128 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:43,993 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt
-2019-11-21 13:50:43,994 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt
-2019-11-21 13:50:43,996 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:44,004 DEBUG Kopieren fertig!
-2019-11-21 13:50:44,005 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:50:44,013 DEBUG Kopieren fertig!
-2019-11-21 13:50:44,013 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:50:44,013 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:44,014 DEBUG Sammle Datei(en) für Position 100 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:44,019 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt
-2019-11-21 13:50:44,020 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt
-2019-11-21 13:50:44,021 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt
-2019-11-21 13:50:44,024 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt ist schon kopiert worden
-2019-11-21 13:50:44,025 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt ist schon kopiert worden
-2019-11-21 13:50:44,027 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt ist schon kopiert worden
-2019-11-21 13:50:44,027 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:50:44,028 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:44,028 DEBUG Sammle Datei(en) für Position 101 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:44,033 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt
-2019-11-21 13:50:44,034 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt
-2019-11-21 13:50:44,035 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt
-2019-11-21 13:50:44,037 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt ist schon kopiert worden
-2019-11-21 13:50:44,039 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt ist schon kopiert worden
-2019-11-21 13:50:44,040 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt ist schon kopiert worden
-2019-11-21 13:50:44,041 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:50:44,041 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:44,041 DEBUG Sammle Datei(en) für Position 127 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:44,047 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt
-2019-11-21 13:50:44,048 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt
-2019-11-21 13:50:44,050 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt ist schon kopiert worden
-2019-11-21 13:50:44,051 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt ist schon kopiert worden
-2019-11-21 13:50:44,052 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:50:44,052 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:50:44,052 DEBUG Sammle Datei(en) für Position 128 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:50:44,058 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt
-2019-11-21 13:50:44,059 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt
-2019-11-21 13:50:44,061 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt ist schon kopiert worden
-2019-11-21 13:50:44,062 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt ist schon kopiert worden
-2019-11-21 13:50:44,063 DEBUG Arbeite mit 19.595.01
-2019-11-21 13:50:44,063 DEBUG Aus 19.595.01 ist W:\DI-Wasserstrahlschneiden\2019\19.595 geworden
-2019-11-21 13:50:44,063 DEBUG Sammle Datei(en) für Position 4 in W:\DI-Wasserstrahlschneiden\2019\19.595
-2019-11-21 13:50:44,064 ERROR Konnte keine Datei für Pos. 4 in W:\DI-Wasserstrahlschneiden\2019\19.595 finden!
-2019-11-21 13:50:44,065 DEBUG Arbeite mit 19.595.01
-2019-11-21 13:50:44,066 DEBUG Aus 19.595.01 ist W:\DI-Wasserstrahlschneiden\2019\19.595 geworden
-2019-11-21 13:50:44,066 DEBUG Sammle Datei(en) für Position 5 in W:\DI-Wasserstrahlschneiden\2019\19.595
-2019-11-21 13:50:44,066 ERROR Konnte keine Datei für Pos. 5 in W:\DI-Wasserstrahlschneiden\2019\19.595 finden!
-2019-11-21 13:50:44,067 INFO Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
-2019-11-21 13:50:44,067 INFO Mit Strg-C kann man es aber schließen.
-2019-11-21 13:55:48,411 INFO --------------------- STARTING ---------------------
-2019-11-21 13:55:48,411 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-21 13:55:48,412 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage - Kopie.xlsm
-2019-11-21 13:55:48,413 ERROR Konnte W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage - Kopie.xlsm nicht offnen!
-2019-11-21 13:56:02,235 INFO --------------------- STARTING ---------------------
-2019-11-21 13:56:02,236 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-21 13:56:02,236 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage - Kopie.xlsm
-2019-11-21 13:56:02,237 ERROR Konnte W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage - Kopie.xlsm nicht offnen!
-2019-11-21 13:57:20,239 INFO --------------------- STARTING ---------------------
-2019-11-21 13:57:20,239 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-21 13:57:20,240 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
-2019-11-21 13:57:24,547 INFO Feierabend!
-2019-11-21 13:57:45,882 INFO --------------------- STARTING ---------------------
-2019-11-21 13:57:45,883 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-21 13:57:45,883 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
-2019-11-21 13:58:25,454 INFO Fertig!
-2019-11-21 13:58:25,456 DEBUG Gelesen aus Zeile 3: {'job_nr': '19.280.02', 'pos': 48}
-2019-11-21 13:58:25,456 DEBUG Nächste Zeile: 4
-2019-11-21 13:58:25,457 DEBUG Gelesen aus Zeile 4: {'job_nr': '19.280.02', 'pos': 49}
-2019-11-21 13:58:25,458 DEBUG Nächste Zeile: 5
-2019-11-21 13:58:25,459 DEBUG Gelesen aus Zeile 5: {'job_nr': '19.280.02', 'pos': 51}
-2019-11-21 13:58:25,459 DEBUG Nächste Zeile: 6
-2019-11-21 13:58:25,460 DEBUG Gelesen aus Zeile 6: {'job_nr': '19.280.04', 'pos': 47}
-2019-11-21 13:58:25,461 DEBUG Nächste Zeile: 7
-2019-11-21 13:58:25,461 DEBUG Gelesen aus Zeile 7: {'job_nr': '19.280.04', 'pos': 48}
-2019-11-21 13:58:25,462 DEBUG Nächste Zeile: 8
-2019-11-21 13:58:25,463 DEBUG Gelesen aus Zeile 8: {'job_nr': '19.280.04', 'pos': 49}
-2019-11-21 13:58:25,463 DEBUG Nächste Zeile: 9
-2019-11-21 13:58:25,464 DEBUG Gelesen aus Zeile 9: {'job_nr': '19.280.06', 'pos': 47}
-2019-11-21 13:58:25,464 DEBUG Nächste Zeile: 10
-2019-11-21 13:58:25,465 DEBUG Gelesen aus Zeile 10: {'job_nr': '19.280.06', 'pos': 48}
-2019-11-21 13:58:25,465 DEBUG Nächste Zeile: 11
-2019-11-21 13:58:25,465 DEBUG Gelesen aus Zeile 11: {'job_nr': '19.280.06', 'pos': 48}
-2019-11-21 13:58:25,466 DEBUG Nächste Zeile: 12
-2019-11-21 13:58:25,466 DEBUG Gelesen aus Zeile 12: {'job_nr': '19.280.08', 'pos': 100}
-2019-11-21 13:58:25,467 DEBUG Nächste Zeile: 13
-2019-11-21 13:58:25,467 DEBUG Gelesen aus Zeile 13: {'job_nr': '19.280.08', 'pos': 101}
-2019-11-21 13:58:25,468 DEBUG Nächste Zeile: 14
-2019-11-21 13:58:25,468 DEBUG Gelesen aus Zeile 14: {'job_nr': '19.280.08', 'pos': 127}
-2019-11-21 13:58:25,468 DEBUG Nächste Zeile: 15
-2019-11-21 13:58:25,469 DEBUG Gelesen aus Zeile 15: {'job_nr': '19.280.08', 'pos': 128}
-2019-11-21 13:58:25,469 DEBUG Nächste Zeile: 16
-2019-11-21 13:58:25,470 DEBUG Gelesen aus Zeile 16: {'job_nr': '19.280.09', 'pos': 100}
-2019-11-21 13:58:25,470 DEBUG Nächste Zeile: 17
-2019-11-21 13:58:25,471 DEBUG Gelesen aus Zeile 17: {'job_nr': '19.280.09', 'pos': 101}
-2019-11-21 13:58:25,471 DEBUG Nächste Zeile: 18
-2019-11-21 13:58:25,471 DEBUG Gelesen aus Zeile 18: {'job_nr': '19.280.09', 'pos': 127}
-2019-11-21 13:58:25,472 DEBUG Nächste Zeile: 19
-2019-11-21 13:58:25,472 DEBUG Gelesen aus Zeile 19: {'job_nr': '19.280.09', 'pos': 128}
-2019-11-21 13:58:25,473 DEBUG Nächste Zeile: 20
-2019-11-21 13:58:25,473 DEBUG Gelesen aus Zeile 20: {'job_nr': '19.595.01', 'pos': 4}
-2019-11-21 13:58:25,473 DEBUG Nächste Zeile: 21
-2019-11-21 13:58:25,474 DEBUG Gelesen aus Zeile 21: {'job_nr': '19.595.01', 'pos': 5}
-2019-11-21 13:58:25,474 DEBUG Nächste Zeile: 22
-2019-11-21 13:58:25,475 INFO Habe 19 positionen gefunden.
-2019-11-21 13:58:25,475 DEBUG Arbeite mit 19.280.02
-2019-11-21 13:58:25,476 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,476 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,496 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:58:25,519 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:58:25,521 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:58:25,543 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:58:25,547 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:58:25,579 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,590 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,591 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,599 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,600 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,607 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,608 DEBUG Arbeite mit 19.280.02
-2019-11-21 13:58:25,608 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,608 DEBUG Sammle Datei(en) für Position 49 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,610 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt
-2019-11-21 13:58:25,611 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:58:25,612 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt
-2019-11-21 13:58:25,614 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt
-2019-11-21 13:58:25,617 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,626 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,626 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,634 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,635 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,643 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,644 DEBUG Arbeite mit 19.280.02
-2019-11-21 13:58:25,644 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,644 DEBUG Sammle Datei(en) für Position 51 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,646 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.51.ipt
-2019-11-21 13:58:25,652 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.51.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,660 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,660 DEBUG Arbeite mit 19.280.04
-2019-11-21 13:58:25,661 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,661 DEBUG Sammle Datei(en) für Position 47 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,663 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt
-2019-11-21 13:58:25,664 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:58:25,665 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt
-2019-11-21 13:58:25,666 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:58:25,667 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt
-2019-11-21 13:58:25,668 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:58:25,671 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,679 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,680 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,687 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,688 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,696 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,696 DEBUG Arbeite mit 19.280.04
-2019-11-21 13:58:25,697 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,697 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,699 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:58:25,701 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:58:25,702 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:58:25,703 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:58:25,704 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:58:25,707 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,708 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,710 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,710 DEBUG Arbeite mit 19.280.04
-2019-11-21 13:58:25,711 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,711 DEBUG Sammle Datei(en) für Position 49 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,713 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt
-2019-11-21 13:58:25,713 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:58:25,715 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt
-2019-11-21 13:58:25,716 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt
-2019-11-21 13:58:25,720 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt ist schon kopiert worden
-2019-11-21 13:58:25,721 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt ist schon kopiert worden
-2019-11-21 13:58:25,723 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt ist schon kopiert worden
-2019-11-21 13:58:25,723 DEBUG Arbeite mit 19.280.06
-2019-11-21 13:58:25,724 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,724 DEBUG Sammle Datei(en) für Position 47 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,725 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt
-2019-11-21 13:58:25,726 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-21 13:58:25,728 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt
-2019-11-21 13:58:25,728 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:58:25,730 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt
-2019-11-21 13:58:25,730 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:58:25,734 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt ist schon kopiert worden
-2019-11-21 13:58:25,735 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt ist schon kopiert worden
-2019-11-21 13:58:25,736 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt ist schon kopiert worden
-2019-11-21 13:58:25,737 DEBUG Arbeite mit 19.280.06
-2019-11-21 13:58:25,737 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,738 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,739 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:58:25,741 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:58:25,741 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:58:25,743 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:58:25,744 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:58:25,747 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,748 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,749 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,749 DEBUG Arbeite mit 19.280.06
-2019-11-21 13:58:25,750 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,750 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,752 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-21 13:58:25,753 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-21 13:58:25,754 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-21 13:58:25,756 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-21 13:58:25,756 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-21 13:58:25,760 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,761 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,762 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-21 13:58:25,762 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:58:25,763 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,763 DEBUG Sammle Datei(en) für Position 100 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,767 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt
-2019-11-21 13:58:25,768 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt
-2019-11-21 13:58:25,769 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt
-2019-11-21 13:58:25,771 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,779 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,780 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,787 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,788 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,797 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,797 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:58:25,798 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,798 DEBUG Sammle Datei(en) für Position 101 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,803 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt
-2019-11-21 13:58:25,804 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt
-2019-11-21 13:58:25,805 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt
-2019-11-21 13:58:25,807 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,815 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,816 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,824 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,825 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,833 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,833 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:58:25,833 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,834 DEBUG Sammle Datei(en) für Position 127 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,839 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt
-2019-11-21 13:58:25,840 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt
-2019-11-21 13:58:25,842 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,850 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,851 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,859 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,859 DEBUG Arbeite mit 19.280.08
-2019-11-21 13:58:25,859 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,860 DEBUG Sammle Datei(en) für Position 128 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,866 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt
-2019-11-21 13:58:25,867 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt
-2019-11-21 13:58:25,868 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,876 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,877 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-21 13:58:25,885 DEBUG Kopieren fertig!
-2019-11-21 13:58:25,886 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:58:25,886 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,887 DEBUG Sammle Datei(en) für Position 100 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,892 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt
-2019-11-21 13:58:25,893 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt
-2019-11-21 13:58:25,894 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt
-2019-11-21 13:58:25,896 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.100.ipt ist schon kopiert worden
-2019-11-21 13:58:25,897 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.100.ipt ist schon kopiert worden
-2019-11-21 13:58:25,899 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.100.ipt ist schon kopiert worden
-2019-11-21 13:58:25,899 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:58:25,899 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,900 DEBUG Sammle Datei(en) für Position 101 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,904 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt
-2019-11-21 13:58:25,905 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt
-2019-11-21 13:58:25,906 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt
-2019-11-21 13:58:25,909 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt ist schon kopiert worden
-2019-11-21 13:58:25,910 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt ist schon kopiert worden
-2019-11-21 13:58:25,911 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt ist schon kopiert worden
-2019-11-21 13:58:25,912 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:58:25,912 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,912 DEBUG Sammle Datei(en) für Position 127 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,918 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt
-2019-11-21 13:58:25,919 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt
-2019-11-21 13:58:25,921 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt ist schon kopiert worden
-2019-11-21 13:58:25,922 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt ist schon kopiert worden
-2019-11-21 13:58:25,922 DEBUG Arbeite mit 19.280.09
-2019-11-21 13:58:25,923 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-21 13:58:25,923 DEBUG Sammle Datei(en) für Position 128 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-21 13:58:25,928 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt
-2019-11-21 13:58:25,929 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt
-2019-11-21 13:58:25,931 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt ist schon kopiert worden
-2019-11-21 13:58:25,932 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt ist schon kopiert worden
-2019-11-21 13:58:25,933 DEBUG Arbeite mit 19.595.01
-2019-11-21 13:58:25,933 DEBUG Aus 19.595.01 ist W:\DI-Wasserstrahlschneiden\2019\19.595 geworden
-2019-11-21 13:58:25,934 DEBUG Sammle Datei(en) für Position 4 in W:\DI-Wasserstrahlschneiden\2019\19.595
-2019-11-21 13:58:25,934 ERROR Konnte keine Datei für Pos. 4 in W:\DI-Wasserstrahlschneiden\2019\19.595 finden!
-2019-11-21 13:58:25,935 DEBUG Arbeite mit 19.595.01
-2019-11-21 13:58:25,935 DEBUG Aus 19.595.01 ist W:\DI-Wasserstrahlschneiden\2019\19.595 geworden
-2019-11-21 13:58:25,936 DEBUG Sammle Datei(en) für Position 5 in W:\DI-Wasserstrahlschneiden\2019\19.595
-2019-11-21 13:58:25,936 ERROR Konnte keine Datei für Pos. 5 in W:\DI-Wasserstrahlschneiden\2019\19.595 finden!
-2019-11-21 13:58:25,937 INFO Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
-2019-11-21 13:58:25,937 INFO Mit Strg-C kann man es aber schließen.
-2019-11-25 06:33:01,041 INFO --------------------- STARTING ---------------------
-2019-11-25 06:33:01,051 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-25 06:33:01,052 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
-2019-11-25 06:34:19,563 INFO Fertig!
-2019-11-25 06:34:19,564 INFO Habe 0 positionen gefunden.
-2019-11-25 06:34:19,564 INFO Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
-2019-11-25 06:34:19,565 INFO Mit Strg-C kann man es aber schließen.
-2019-11-25 06:39:29,311 INFO --------------------- STARTING ---------------------
-2019-11-25 06:39:29,312 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-25 06:39:29,313 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
-2019-11-25 06:40:46,454 INFO Fertig!
-2019-11-25 06:40:46,454 INFO Habe 0 positionen gefunden.
-2019-11-25 06:40:46,455 INFO Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
-2019-11-25 06:40:46,455 INFO Mit Strg-C kann man es aber schließen.
-2019-11-25 06:45:44,330 INFO --------------------- STARTING ---------------------
-2019-11-25 06:45:44,331 INFO Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
-2019-11-25 06:45:44,332 INFO Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
-2019-11-25 06:47:01,067 INFO Fertig!
-2019-11-25 06:47:01,068 DEBUG Gelesen aus Zeile 3: {'job_nr': '19.280.02', 'pos': 48}
-2019-11-25 06:47:01,069 DEBUG Nächste Zeile: 4
-2019-11-25 06:47:01,069 DEBUG Gelesen aus Zeile 4: {'job_nr': '19.280.02', 'pos': 49}
-2019-11-25 06:47:01,070 DEBUG Nächste Zeile: 5
-2019-11-25 06:47:01,070 DEBUG Gelesen aus Zeile 5: {'job_nr': '19.280.02', 'pos': 51}
-2019-11-25 06:47:01,071 DEBUG Nächste Zeile: 6
-2019-11-25 06:47:01,071 DEBUG Gelesen aus Zeile 6: {'job_nr': '19.280.04', 'pos': 47}
-2019-11-25 06:47:01,072 DEBUG Nächste Zeile: 7
-2019-11-25 06:47:01,072 DEBUG Gelesen aus Zeile 7: {'job_nr': '19.280.04', 'pos': 48}
-2019-11-25 06:47:01,072 DEBUG Nächste Zeile: 8
-2019-11-25 06:47:01,073 DEBUG Gelesen aus Zeile 8: {'job_nr': '19.280.04', 'pos': 49}
-2019-11-25 06:47:01,073 DEBUG Nächste Zeile: 9
-2019-11-25 06:47:01,074 DEBUG Gelesen aus Zeile 9: {'job_nr': '19.280.06', 'pos': 47}
-2019-11-25 06:47:01,074 DEBUG Nächste Zeile: 10
-2019-11-25 06:47:01,075 DEBUG Gelesen aus Zeile 10: {'job_nr': '19.280.06', 'pos': 48}
-2019-11-25 06:47:01,075 DEBUG Nächste Zeile: 11
-2019-11-25 06:47:01,076 DEBUG Gelesen aus Zeile 11: {'job_nr': '19.280.06', 'pos': 48}
-2019-11-25 06:47:01,076 DEBUG Nächste Zeile: 12
-2019-11-25 06:47:01,077 DEBUG Gelesen aus Zeile 12: {'job_nr': '19.280.08', 'pos': 101}
-2019-11-25 06:47:01,077 DEBUG Nächste Zeile: 13
-2019-11-25 06:47:01,078 DEBUG Gelesen aus Zeile 13: {'job_nr': '19.280.08', 'pos': 127}
-2019-11-25 06:47:01,078 DEBUG Nächste Zeile: 14
-2019-11-25 06:47:01,079 DEBUG Gelesen aus Zeile 14: {'job_nr': '19.280.08', 'pos': 128}
-2019-11-25 06:47:01,079 DEBUG Nächste Zeile: 15
-2019-11-25 06:47:01,079 DEBUG Gelesen aus Zeile 15: {'job_nr': '19.280.09', 'pos': 101}
-2019-11-25 06:47:01,080 DEBUG Nächste Zeile: 16
-2019-11-25 06:47:01,080 DEBUG Gelesen aus Zeile 16: {'job_nr': '19.280.09', 'pos': 127}
-2019-11-25 06:47:01,081 DEBUG Nächste Zeile: 17
-2019-11-25 06:47:01,081 DEBUG Gelesen aus Zeile 17: {'job_nr': '19.280.09', 'pos': 128}
-2019-11-25 06:47:01,082 DEBUG Nächste Zeile: 18
-2019-11-25 06:47:01,082 DEBUG Gelesen aus Zeile 18: {'job_nr': '19.595.01', 'pos': 4}
-2019-11-25 06:47:01,083 DEBUG Nächste Zeile: 19
-2019-11-25 06:47:01,083 DEBUG Gelesen aus Zeile 19: {'job_nr': '19.595.01', 'pos': 5}
-2019-11-25 06:47:01,084 DEBUG Nächste Zeile: 20
-2019-11-25 06:47:01,084 DEBUG Gelesen aus Zeile 20: {'job_nr': '19.317.01', 'pos': 119}
-2019-11-25 06:47:01,085 DEBUG Nächste Zeile: 21
-2019-11-25 06:47:01,085 DEBUG Gelesen aus Zeile 21: {'job_nr': '19.317.02', 'pos': 119}
-2019-11-25 06:47:01,085 DEBUG Nächste Zeile: 22
-2019-11-25 06:47:01,086 DEBUG Gelesen aus Zeile 22: {'job_nr': '19.317.02', 'pos': 119}
-2019-11-25 06:47:01,086 DEBUG Nächste Zeile: 23
-2019-11-25 06:47:01,087 DEBUG Gelesen aus Zeile 23: {'job_nr': '19.317.03', 'pos': 56}
-2019-11-25 06:47:01,087 DEBUG Nächste Zeile: 24
-2019-11-25 06:47:01,088 INFO Habe 21 positionen gefunden.
-2019-11-25 06:47:01,088 DEBUG Arbeite mit 19.280.02
-2019-11-25 06:47:01,089 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,089 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,146 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-25 06:47:01,212 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-25 06:47:01,219 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-25 06:47:01,291 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-25 06:47:01,306 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-25 06:47:01,406 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,429 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,431 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,465 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,466 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,489 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,490 DEBUG Arbeite mit 19.280.02
-2019-11-25 06:47:01,491 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,491 DEBUG Sammle Datei(en) für Position 49 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,495 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt
-2019-11-25 06:47:01,497 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-25 06:47:01,500 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt
-2019-11-25 06:47:01,504 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt
-2019-11-25 06:47:01,512 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,540 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,542 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,557 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,559 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,572 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,573 DEBUG Arbeite mit 19.280.02
-2019-11-25 06:47:01,574 DEBUG Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,574 DEBUG Sammle Datei(en) für Position 51 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,580 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.51.ipt
-2019-11-25 06:47:01,595 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.51.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,608 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,609 DEBUG Arbeite mit 19.280.04
-2019-11-25 06:47:01,610 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,610 DEBUG Sammle Datei(en) für Position 47 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,614 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt
-2019-11-25 06:47:01,615 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-25 06:47:01,618 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt
-2019-11-25 06:47:01,619 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-25 06:47:01,623 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt
-2019-11-25 06:47:01,624 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-25 06:47:01,629 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,653 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,654 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,665 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,666 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,695 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,695 DEBUG Arbeite mit 19.280.04
-2019-11-25 06:47:01,696 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,697 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,699 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-25 06:47:01,702 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-25 06:47:01,703 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-25 06:47:01,705 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-25 06:47:01,706 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-25 06:47:01,712 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,714 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,716 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,716 DEBUG Arbeite mit 19.280.04
-2019-11-25 06:47:01,717 DEBUG Aus 19.280.04 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,717 DEBUG Sammle Datei(en) für Position 49 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,719 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt
-2019-11-25 06:47:01,720 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-25 06:47:01,723 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt
-2019-11-25 06:47:01,726 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt
-2019-11-25 06:47:01,731 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.49.ipt ist schon kopiert worden
-2019-11-25 06:47:01,733 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.49.ipt ist schon kopiert worden
-2019-11-25 06:47:01,735 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.49.ipt ist schon kopiert worden
-2019-11-25 06:47:01,735 DEBUG Arbeite mit 19.280.06
-2019-11-25 06:47:01,736 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,736 DEBUG Sammle Datei(en) für Position 47 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,739 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt
-2019-11-25 06:47:01,740 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
-2019-11-25 06:47:01,742 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt
-2019-11-25 06:47:01,743 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-25 06:47:01,746 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt
-2019-11-25 06:47:01,747 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-25 06:47:01,752 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.47.ipt ist schon kopiert worden
-2019-11-25 06:47:01,753 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.47.ipt ist schon kopiert worden
-2019-11-25 06:47:01,755 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.47.ipt ist schon kopiert worden
-2019-11-25 06:47:01,756 DEBUG Arbeite mit 19.280.06
-2019-11-25 06:47:01,756 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,757 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,759 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-25 06:47:01,762 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-25 06:47:01,763 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-25 06:47:01,766 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-25 06:47:01,767 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-25 06:47:01,772 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,774 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,775 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,776 DEBUG Arbeite mit 19.280.06
-2019-11-25 06:47:01,776 DEBUG Aus 19.280.06 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,777 DEBUG Sammle Datei(en) für Position 48 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,780 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt
-2019-11-25 06:47:01,782 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt
-2019-11-25 06:47:01,783 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
-2019-11-25 06:47:01,786 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt
-2019-11-25 06:47:01,787 DEBUG Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
-2019-11-25 06:47:01,792 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1740.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,794 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1743.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,795 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1737.1_Pos.48.ipt ist schon kopiert worden
-2019-11-25 06:47:01,796 DEBUG Arbeite mit 19.280.08
-2019-11-25 06:47:01,796 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,797 DEBUG Sammle Datei(en) für Position 101 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,808 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt
-2019-11-25 06:47:01,810 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt
-2019-11-25 06:47:01,812 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt
-2019-11-25 06:47:01,814 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,826 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,827 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,851 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,852 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,876 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,876 DEBUG Arbeite mit 19.280.08
-2019-11-25 06:47:01,877 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,878 DEBUG Sammle Datei(en) für Position 127 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,887 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt
-2019-11-25 06:47:01,888 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt
-2019-11-25 06:47:01,890 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,916 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,917 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,951 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,952 DEBUG Arbeite mit 19.280.08
-2019-11-25 06:47:01,952 DEBUG Aus 19.280.08 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:01,953 DEBUG Sammle Datei(en) für Position 128 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:01,971 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt
-2019-11-25 06:47:01,974 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt
-2019-11-25 06:47:01,977 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:01,990 DEBUG Kopieren fertig!
-2019-11-25 06:47:01,991 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,017 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,017 DEBUG Arbeite mit 19.280.09
-2019-11-25 06:47:02,018 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:02,018 DEBUG Sammle Datei(en) für Position 101 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:02,026 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt
-2019-11-25 06:47:02,028 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt
-2019-11-25 06:47:02,030 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt
-2019-11-25 06:47:02,033 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.101.ipt ist schon kopiert worden
-2019-11-25 06:47:02,035 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.101.ipt ist schon kopiert worden
-2019-11-25 06:47:02,037 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.101.ipt ist schon kopiert worden
-2019-11-25 06:47:02,037 DEBUG Arbeite mit 19.280.09
-2019-11-25 06:47:02,038 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:02,038 DEBUG Sammle Datei(en) für Position 127 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:02,047 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt
-2019-11-25 06:47:02,049 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt
-2019-11-25 06:47:02,052 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.127.ipt ist schon kopiert worden
-2019-11-25 06:47:02,054 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.127.ipt ist schon kopiert worden
-2019-11-25 06:47:02,054 DEBUG Arbeite mit 19.280.09
-2019-11-25 06:47:02,055 DEBUG Aus 19.280.09 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
-2019-11-25 06:47:02,055 DEBUG Sammle Datei(en) für Position 128 in W:\DI-Wasserstrahlschneiden\2019\19.280
-2019-11-25 06:47:02,064 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt
-2019-11-25 06:47:02,066 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt
-2019-11-25 06:47:02,069 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.128.ipt ist schon kopiert worden
-2019-11-25 06:47:02,071 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.128.ipt ist schon kopiert worden
-2019-11-25 06:47:02,072 DEBUG Arbeite mit 19.595.01
-2019-11-25 06:47:02,072 DEBUG Aus 19.595.01 ist W:\DI-Wasserstrahlschneiden\2019\19.595 geworden
-2019-11-25 06:47:02,073 DEBUG Sammle Datei(en) für Position 4 in W:\DI-Wasserstrahlschneiden\2019\19.595
-2019-11-25 06:47:02,074 ERROR Konnte keine Datei für Pos. 4 in W:\DI-Wasserstrahlschneiden\2019\19.595 finden!
-2019-11-25 06:47:02,075 DEBUG Arbeite mit 19.595.01
-2019-11-25 06:47:02,076 DEBUG Aus 19.595.01 ist W:\DI-Wasserstrahlschneiden\2019\19.595 geworden
-2019-11-25 06:47:02,076 DEBUG Sammle Datei(en) für Position 5 in W:\DI-Wasserstrahlschneiden\2019\19.595
-2019-11-25 06:47:02,077 ERROR Konnte keine Datei für Pos. 5 in W:\DI-Wasserstrahlschneiden\2019\19.595 finden!
-2019-11-25 06:47:02,078 DEBUG Arbeite mit 19.317.01
-2019-11-25 06:47:02,078 DEBUG Aus 19.317.01 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
-2019-11-25 06:47:02,079 DEBUG Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
-2019-11-25 06:47:02,300 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
-2019-11-25 06:47:02,503 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
-2019-11-25 06:47:02,597 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
-2019-11-25 06:47:02,668 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
-2019-11-25 06:47:02,732 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
-2019-11-25 06:47:02,762 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
-2019-11-25 06:47:02,785 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
-2019-11-25 06:47:02,786 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,827 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,829 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,858 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,859 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,885 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,886 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,917 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,919 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,941 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,942 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,958 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,959 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:02,985 DEBUG Kopieren fertig!
-2019-11-25 06:47:02,985 DEBUG Arbeite mit 19.317.02
-2019-11-25 06:47:02,986 DEBUG Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
-2019-11-25 06:47:02,986 DEBUG Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
-2019-11-25 06:47:02,988 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
-2019-11-25 06:47:02,991 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
-2019-11-25 06:47:02,993 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
-2019-11-25 06:47:02,996 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
-2019-11-25 06:47:02,998 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
-2019-11-25 06:47:03,000 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
-2019-11-25 06:47:03,002 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
-2019-11-25 06:47:03,004 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,006 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,008 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,010 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,012 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,015 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,016 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,017 DEBUG Arbeite mit 19.317.02
-2019-11-25 06:47:03,018 DEBUG Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
-2019-11-25 06:47:03,018 DEBUG Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
-2019-11-25 06:47:03,020 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
-2019-11-25 06:47:03,022 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
-2019-11-25 06:47:03,025 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
-2019-11-25 06:47:03,028 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
-2019-11-25 06:47:03,031 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
-2019-11-25 06:47:03,032 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
-2019-11-25 06:47:03,034 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
-2019-11-25 06:47:03,037 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,038 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,040 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,042 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,044 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,046 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,047 DEBUG W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt ist schon kopiert worden
-2019-11-25 06:47:03,048 DEBUG Arbeite mit 19.317.03
-2019-11-25 06:47:03,049 DEBUG Aus 19.317.03 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
-2019-11-25 06:47:03,049 DEBUG Sammle Datei(en) für Position 56 in W:\DI-Wasserstrahlschneiden\2019\19.317
-2019-11-25 06:47:03,056 DEBUG Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.03_KF001\19.317.03_8051.2703.1_Pos.56.ipt
-2019-11-25 06:47:03,062 INFO Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.03_KF001\19.317.03_8051.2703.1_Pos.56.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
-2019-11-25 06:47:03,086 DEBUG Kopieren fertig!
-2019-11-25 06:47:03,087 INFO Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
-2019-11-25 06:47:03,088 INFO Mit Strg-C kann man es aber schließen.
+06-12-2019. 09:38:42 -- WSS -- INFO -- STARTING
+06-12-2019. 09:38:42 -- WSS -- INFO -- Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
+06-12-2019. 09:38:42 -- WSS -- INFO -- Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
+06-12-2019. 09:40:05 -- WSS -- INFO -- Fertig!
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 3: {'job_nr': '19.347.07', 'pos': 72}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 4
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 4: {'job_nr': '19.347.07', 'pos': 75}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 5
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 5: {'job_nr': '19.347.07', 'pos': 76}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 6
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 6: {'job_nr': '19.317.04', 'pos': 119}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 7
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 7: {'job_nr': '19.317.04', 'pos': 119}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 8
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 8: {'job_nr': '19.317.04', 'pos': 119}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 9
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Gelesen aus Zeile 9: {'job_nr': '19.317.04', 'pos': 119}.
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Nächste Zeile: 10
+06-12-2019. 09:40:05 -- WSS -- INFO -- Habe 7 positionen gefunden.
+06-12-2019. 09:40:05 -- WSS -- INFO -- Werkstoffe: 1.4301-
+06-12-2019. 09:40:05 -- WSS -- INFO -- Dicken: 10mm
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Arbeite mit 19.347.07
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Aus 19.347.07 ist W:\DI-Wasserstrahlschneiden\2019\19.347 geworden
+06-12-2019. 09:40:05 -- WSS -- DEBUG -- Sammle Datei(en) für Position 72 in W:\DI-Wasserstrahlschneiden\2019\19.347
+06-12-2019. 09:40:06 -- WSS -- ERROR -- Konnte keine Datei für Pos. 72 in W:\DI-Wasserstrahlschneiden\2019\19.347 finden!
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Arbeite mit 19.347.07
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Aus 19.347.07 ist W:\DI-Wasserstrahlschneiden\2019\19.347 geworden
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Sammle Datei(en) für Position 75 in W:\DI-Wasserstrahlschneiden\2019\19.347
+06-12-2019. 09:40:06 -- WSS -- ERROR -- Konnte keine Datei für Pos. 75 in W:\DI-Wasserstrahlschneiden\2019\19.347 finden!
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Arbeite mit 19.347.07
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Aus 19.347.07 ist W:\DI-Wasserstrahlschneiden\2019\19.347 geworden
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Sammle Datei(en) für Position 76 in W:\DI-Wasserstrahlschneiden\2019\19.347
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.347\19.347.05_B-6850\19.347.05_8051.2712.1_Pos.76.ipt
+06-12-2019. 09:40:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.347\19.347.05_B-6850\19.347.05_8051.2712.1_Pos.76.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Arbeite mit 19.317.04
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Aus 19.317.04 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
+06-12-2019. 09:40:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Arbeite mit 19.317.04
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Aus 19.317.04 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Arbeite mit 19.317.04
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Aus 19.317.04 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Arbeite mit 19.317.04
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Aus 19.317.04 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Sammle Datei(en) für Position 119 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.119.ipt ist schon kopiert worden
+06-12-2019. 09:40:07 -- WSS -- INFO -- Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
+06-12-2019. 09:40:07 -- WSS -- INFO -- Mit Strg-C kann man es aber schließen.
+06-12-2019. 09:44:41 -- WSS -- INFO -- STARTING
+06-12-2019. 09:44:41 -- WSS -- INFO -- Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
+06-12-2019. 09:44:41 -- WSS -- INFO -- Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
+06-12-2019. 09:46:05 -- WSS -- INFO -- Fertig!
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gelesen aus Zeile 3: {'job_nr': '19.280.02', 'pos': 91}.
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Nächste Zeile: 4
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gelesen aus Zeile 4: {'job_nr': '19.280.02', 'pos': 92}.
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Nächste Zeile: 5
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gelesen aus Zeile 5: {'job_nr': '19.280.02', 'pos': 94}.
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Nächste Zeile: 6
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gelesen aus Zeile 6: {'job_nr': '19.280.02', 'pos': 98}.
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Nächste Zeile: 7
+06-12-2019. 09:46:05 -- WSS -- INFO -- Habe 4 positionen gefunden.
+06-12-2019. 09:46:05 -- WSS -- INFO -- Werkstoffe: 1.4301-
+06-12-2019. 09:46:05 -- WSS -- INFO -- Dicken: 12mm
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Arbeite mit 19.280.02
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Sammle Datei(en) für Position 91 in W:\DI-Wasserstrahlschneiden\2019\19.280
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.91 oben.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.91 unten.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.91 oben.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.91 unten.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.91 oben.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.91 unten.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.91.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\OldVersions
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.91.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\OldVersions
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.91.ipt
+06-12-2019. 09:46:05 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\OldVersions
+06-12-2019. 09:46:05 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.91.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.91 unten.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.91.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.91 oben.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.91 oben.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.91.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.91 unten.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.91 oben.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.91 unten.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Arbeite mit 19.280.02
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Sammle Datei(en) für Position 92 in W:\DI-Wasserstrahlschneiden\2019\19.280
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.92a.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\19.280.05_8051.2686.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\19.280.05_8051.2686.1_Pos.92_3D-Modell.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.92.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\OldVersions
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\19.280.05_8051.2686.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.05_K-6900\19.280.05_8051.2686.1_Pos.92_3D-Modell.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.92.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.92a.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Arbeite mit 19.280.02
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Sammle Datei(en) für Position 94 in W:\DI-Wasserstrahlschneiden\2019\19.280
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.94.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.94.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.94.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\OldVersions
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.06_Stahlbau K6900\19.280.06_8130.1742.1_Pos.94.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.94.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.04_Stahlbau K6800\19.280.04_8130.1739.1_Pos.94.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Arbeite mit 19.280.02
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Aus 19.280.02 ist W:\DI-Wasserstrahlschneiden\2019\19.280 geworden
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Sammle Datei(en) für Position 98 in W:\DI-Wasserstrahlschneiden\2019\19.280
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.98 oben.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.98 unten.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\OldVersions
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.98.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.98.ipt
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.98.ipt
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.08_W-6810\19.280.08_8060.0127.1_Pos.98.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.98 oben.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.07_W-6710\19.280.07_8060.0126.1_Pos.98.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.02_Stahlbau K6700\19.280.02_8130.1736.1_Pos.98 unten.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.280\19.280.09_W-6910\19.280.09_8060.0128.1_Pos.98.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 09:46:06 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 09:46:06 -- WSS -- INFO -- Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
+06-12-2019. 09:46:06 -- WSS -- INFO -- Mit Strg-C kann man es aber schließen.
+06-12-2019. 10:56:57 -- WSS -- INFO -- STARTING
+06-12-2019. 10:56:57 -- WSS -- INFO -- Nehme Data aus "Programmzettel 2D" - das kann etwas dauern...
+06-12-2019. 10:56:57 -- WSS -- INFO -- Offne W:\DI-Wasserstrahlschneiden\Auftragsstatus WSS- Anlage.xlsm
+06-12-2019. 10:58:20 -- WSS -- INFO -- Fertig!
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 3: {'job_nr': '19.317.01', 'pos': 3}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 4
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 4: {'job_nr': '19.317.01', 'pos': 8}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 5
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 5: {'job_nr': '19.317.01', 'pos': 14}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 6
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 6: {'job_nr': '19.317.01', 'pos': 15}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 7
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 7: {'job_nr': '19.317.02', 'pos': 3}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 8
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 8: {'job_nr': '19.317.02', 'pos': 8}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 9
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 9: {'job_nr': '19.317.02', 'pos': 14}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 10
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 10: {'job_nr': '19.317.02', 'pos': 15}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 11
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 11: {'job_nr': '19.317.02', 'pos': 3}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 12
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 12: {'job_nr': '19.317.02', 'pos': 8}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 13
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 13: {'job_nr': '19.317.02', 'pos': 14}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 14
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gelesen aus Zeile 14: {'job_nr': '19.317.02', 'pos': 15}.
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Nächste Zeile: 15
+06-12-2019. 10:58:20 -- WSS -- INFO -- Habe 12 positionen gefunden.
+06-12-2019. 10:58:20 -- WSS -- INFO -- Werkstoffe: 1.4539-
+06-12-2019. 10:58:20 -- WSS -- INFO -- Dicken: 8mm
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Arbeite mit 19.317.01
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Aus 19.317.01 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Sammle Datei(en) für Position 3 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.3.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.3.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.3.ipt
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.3.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.3.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.3.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Arbeite mit 19.317.01
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Aus 19.317.01 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Sammle Datei(en) für Position 8 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.8.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.8.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.8.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.86.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.87.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.88.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\OldVersions
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\OldVersions
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.86.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.87.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.88.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.86.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.87.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.88.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.80.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.86.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.87.ipt
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.88.ipt
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.86.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.86.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.8.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:20 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:20 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.87.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.8.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.87.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.86.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.8.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.88.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.88.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.86.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.88.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.87.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.87.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.80.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.88.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.01
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.01 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 14 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.14.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.14.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.14.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.01
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.01 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 15 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.15.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.15.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- INFO -- Kopiere W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.15.ipt -> W:\DI-Wasserstrahlschneiden\Programzettel Aktuell
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Kopieren fertig!
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 3 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.3.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.3.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.3.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.3.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.3.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.3.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 8 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.8.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.8.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.8.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\OldVersions
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\OldVersions
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.8.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.8.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.8.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 14 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.14.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.14.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.14.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 15 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.15.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.15.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.15.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 3 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.3.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.3.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.3.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.3.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.3.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.3.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 8 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.8.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.8.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.8.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\OldVersions
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Skipped an older version in W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\OldVersions
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.80.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.86.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.87.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.88.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.8.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.8.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.8.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA003\19.317.04_8051.2704.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.86.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA007\19.317.04_8051.2707.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.87.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA004\19.317.04_8051.2705.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.1_Pos.80.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.04_RA006\19.317.04_8051.2706.1_Pos.88.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 14 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.14.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.14.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.14.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.14.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Arbeite mit 19.317.02
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Aus 19.317.02 ist W:\DI-Wasserstrahlschneiden\2019\19.317 geworden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Sammle Datei(en) für Position 15 in W:\DI-Wasserstrahlschneiden\2019\19.317
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- Gefunden: W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.15.ipt
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA002\19.317.02_8051.2701.3_Pos.15.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.02_RA005\19.317.02_8051.2702.3_Pos.15.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- DEBUG -- W:\DI-Wasserstrahlschneiden\2019\19.317\19.317.01_RA001\19.317.01_8051.2700.3_Pos.15.ipt ist schon kopiert worden
+06-12-2019. 10:58:21 -- WSS -- INFO -- Bin fertig. Lasse dieses Fenster noch für 60 Sekunden geöffnet.
+06-12-2019. 10:58:21 -- WSS -- INFO -- Mit Strg-C kann man es aber schließen.

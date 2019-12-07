@@ -5,11 +5,13 @@ log definitions
 
 pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'),
        'separator': ' -- ',
+       'section_start': 'Program start',
        'name': 'PyNozzlePro',
        'logdir_path': 'V:\\KO\\NozzlePro'}
 
 wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
        'separator': ' -- ',
+       'section_start': 'STARTING',
        'name': 'Wasserstrahlschneider',
        'logdir_path': 'W:\\GJ\\Logs\\WSS'}
 
