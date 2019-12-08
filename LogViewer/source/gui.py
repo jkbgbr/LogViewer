@@ -137,19 +137,15 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
 
     def OnGetItemAttr(self, item):
         """sets abd returns the background of the rows"""
-        _current_line = self.all_lines[item]  # shorthand
         # extracting the level
-        lvl = self.log.get_field_values(fieldname='level', lines=[_current_line])
+        lvl = self.log.get_field_values(fieldname='level', lines=[self.all_lines[item]])
         # setting and returning
         self.backgroundcolor.SetBackgroundColour(self.colorizer(lvl.pop()))  # returns nothing, justs sets
         return self.backgroundcolor
 
     def OnGetItemText(self, item, column):
         """This is the method that makes the listctrl virtual"""
-        _current_line = self.all_lines[item]
-        _ret = self.log.parse_entry(_current_line, separator=self.log.separator)
-        # lvl = self.log.get_field_values(fieldname='level', lines=[_current_line])
-        # self.colorize_entry(item, lvl.pop())
+        _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator)
         try:
             return _ret[column]
         except (IndexError, TypeError):
