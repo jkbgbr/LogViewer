@@ -23,3 +23,12 @@ LOGLEVELS = ('TRACE', 'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL')  # used i
 CONFIGFILE_PATH = os.path.join(CONFIG_DIR, CONFIGFILE_NAME)
 
 UNDEFINED = '!!!'  # the string put in the list if the log entry is not long enough. Happens if the log message is empty
+
+# colors for the log levels in the log window
+log_level_colors = {
+    'DEBUG': (255, 255, 255),  # white
+    'INFO': (250, 250, 250),  # bit lighter as light grey
+    'WARNING': (255, 200, 0),  # yellow
+    'ERROR': (255, 120, 0),  # light red
+    'CRITICAL': (255, 40, 0),  # darker red
+}

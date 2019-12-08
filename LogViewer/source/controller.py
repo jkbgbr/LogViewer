@@ -51,7 +51,9 @@ class Controller:
         if isinstance(log, Log):
             self._active_log = log
             self.view.loglist.set_log(self._active_log)
-            self.view.loglist.fill_list()
+
+             # filling the list. if the descriptor has a default level defined, this will be shown
+            self.view.loglist.fill_list(level=self._active_log.descriptor.default_level)
 
             pub.sendMessage('list.levels', levels=self._active_log.get_levels())
             pub.sendMessage('list.emitters', emitters=self._active_log.get_emitters())
@@ -72,6 +74,7 @@ class LogDescriptor(NodeMixin):
                  separator: str = None,
                  section_start: str = None,
                  name: str = None,
+                 default_level: str = None,
                  logdir_path: str = None):
         """
         Holds basic information required to handle logs: structure, field separator, name etc
@@ -81,6 +84,7 @@ class LogDescriptor(NodeMixin):
         self.separator = separator
         self.section_start = section_start
         self.name = name
+        self.default_level = default_level
         self.logdir_path = logdir_path
 
     @staticmethod
@@ -172,6 +176,8 @@ class Log(NodeMixin):
             pass
 
         return _ret
+
+
 
     def get_log_summary(self):
         """returns a summary that can be used e.g. in the statusbar"""

@@ -11,7 +11,7 @@ import wx.lib.mixins.inspection
 import wx.lib.mixins.listctrl as listmix
 from pubsub import pub
 
-from LogViewer.source.config import APP_LONG_NAME, CONFIGFILE_PATH, APP_NAME
+from LogViewer.source.config import APP_LONG_NAME, CONFIGFILE_PATH, APP_NAME, log_level_colors
 
 
 class MenuBar(wx.MenuBar):
@@ -100,6 +100,11 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
                                       style=wx.LC_REPORT | wx.LC_VIRTUAL | wx.LC_HRULES | wx.LC_VRULES)
         self.log = None
         self.all_lines = None
+
+        # the background attribute to be set later
+        # http://wxpython-users.1045709.n5.nabble.com/Changing-cell-background-inside-virtual-ListCtrl-td5720303.html
+        self.backgroundcolor = wx.ListItemAttr()
+
         pub.subscribe(self.set_columns, 'list.filled')
         pub.subscribe(self.fill_list, 'list.filter')
 
@@ -116,8 +121,20 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
             self.InsertColumn(eindex, entry)
         self.Thaw()
 
+    def OnGetItemAttr(self, item):
+        """sets abd returns the background of the rows"""
+        _current_line = self.all_lines[item]  # shorthand
+        # extracting the level
+        lvl = self.log.get_field_values(fieldname='level', lines=[_current_line])
+        # setting and returning
+        return self.backgroundcolor.SetBackgroundColour(self.colorizer(lvl.pop()))
+
     def OnGetItemText(self, item, column):
-        _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator)
+        """This is the method that makes the listctrl virtual"""
+        _current_line = self.all_lines[item]
+        _ret = self.log.parse_entry(_current_line, separator=self.log.separator)
+        # lvl = self.log.get_field_values(fieldname='level', lines=[_current_line])
+        # self.colorize_entry(item, lvl.pop())
         try:
             return _ret[column]
         except (IndexError, TypeError):
@@ -139,6 +156,14 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
         self.SetItemCount(len(lines))
         pub.sendMessage('list.filled')
         self.Thaw()
+
+    def colorize_entry(self, index, level):
+        if index >= 0:
+            self.SetItemBackgroundColour(index, self.colorizer(level))  # color
+
+    @staticmethod
+    def colorizer(level=None):
+        return wx.Colour(log_level_colors.get(level, (155, 155, 155)))
 
     def set_columns(self):
         self.Freeze()
