@@ -12,6 +12,7 @@ import wx.lib.mixins.listctrl as listmix
 from pubsub import pub
 
 from LogViewer.source.config import APP_LONG_NAME, CONFIGFILE_PATH, APP_NAME, log_level_colors
+import time
 
 
 class MenuBar(wx.MenuBar):
@@ -93,6 +94,19 @@ class Tree(wx.TreeCtrl):
                 self.SetItemHasChildren(newItem, True)
 
 
+class Watch(wx.Timer):
+
+    def __init__(self):
+        super(Watch, self).__init__()
+        self.Start(1000)
+        self.Bind(wx.EVT_TIMER, self.OnTimer)
+
+    def OnTimer(self, event):
+        # time string can have characters 0..9, -, period, or space
+        ts = time.strftime("%d. %B. %Y. %H:%M:%S", time.localtime(time.time()))
+        pub.sendMessage('time', time=ts)
+
+
 class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
 
     def __init__(self, parent):
@@ -127,7 +141,8 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
         # extracting the level
         lvl = self.log.get_field_values(fieldname='level', lines=[_current_line])
         # setting and returning
-        return self.backgroundcolor.SetBackgroundColour(self.colorizer(lvl.pop()))
+        self.backgroundcolor.SetBackgroundColour(self.colorizer(lvl.pop()))  # returns nothing, justs sets
+        return self.backgroundcolor
 
     def OnGetItemText(self, item, column):
         """This is the method that makes the listctrl virtual"""
@@ -207,6 +222,9 @@ class MainFrame(wx.Frame):
         self.menubar = MenuBar()
         self.SetMenuBar(self.menubar)
 
+        # timer watch
+        self.watch = Watch()
+
         # AppConfig stuff
         self.appConfig = wx.FileConfig(appName=APP_NAME,
                                        vendorName='JakabGabor',
@@ -216,6 +234,11 @@ class MainFrame(wx.Frame):
         # logger.debug('Config file name set to {}'.format(self.appConfig.GetLocalFileName(APP_NAME)))
         pub.subscribe(self.clear_all, 'clear.all')
         pub.subscribe(self.show_logsummary, 'statusbar.logsummary')
+        pub.subscribe(self.set_time, 'time')
+
+    def set_time(self, time):
+        """sets the time in the Window name field"""
+        self.SetTitle('{} - {}'.format(APP_LONG_NAME, time))
 
     def show_logsummary(self, logsum: Dict = None):
 
