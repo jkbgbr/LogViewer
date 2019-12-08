@@ -103,7 +103,7 @@ class Watch(wx.Timer):
 
     def OnTimer(self, event):
         # time string can have characters 0..9, -, period, or space
-        ts = time.strftime("%d. %B. %Y. %H:%M:%S", time.localtime(time.time()))
+        ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
         pub.sendMessage('time', time=ts)
 
 
@@ -132,10 +132,7 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
         self.Freeze()
         self.ClearAll()
 
-        # adding the Nr. column
-        _struct = ['Nr.'] + list(log.descriptor.entry_structure)
-
-        for eindex, entry in enumerate(_struct):
+        for eindex, entry in enumerate(log.descriptor.entry_structure):
             self.InsertColumn(eindex, entry)
         self.Thaw()
 
@@ -150,8 +147,7 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
     def OnGetItemText(self, item, column):
         """This is the method that makes the listctrl virtual"""
         _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator)
-        # adding the Nr. column
-        _ret = [str(item+1)] + list(_ret)
+
         try:
             return _ret[column]
         except (IndexError, TypeError):
