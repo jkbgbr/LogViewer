@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='LogViewer',
-    version='0.0.1',
+    version='0.0.3',
     packages=['LogViewer', 'LogViewer.docs', 'LogViewer.source'],
     url='',
     license='MIT',
