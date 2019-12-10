@@ -71,7 +71,7 @@ class Tree(wx.TreeCtrl):
             self.Bind(wx.EVT_TREE_ITEM_EXPANDING, self.OnItemExpanding, self)
             self.Bind(wx.EVT_TREE_SEL_CHANGED, self.OnLeftClick, self)
             self.CollapseAll()
-            self.ExpandAll()
+            self.Expand(root)
 
     def OnLeftClick(self, event):
         pub.sendMessage('tree.selected', log=self.GetItemData(event.GetItem()))
