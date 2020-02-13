@@ -1,0 +1,3 @@
+wxpython==4.0.7
+anytree
+pypubsub
