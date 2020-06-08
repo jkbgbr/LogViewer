@@ -7,6 +7,7 @@ import os
 import re
 from typing import Sequence, Set
 
+import wx
 from anytree import NodeMixin, RenderTree, ContStyle, Node
 from pubsub import pub
 
@@ -33,26 +34,39 @@ class Controller:
         :return:
         :rtype:
         """
+
         logs = Node(name='Logs')  # the tree holding the available logs
-        # trying all log descriptors found in log_definition.py
+        progressbar = LogdetectProgress(None, 'Log detection')
+
+        # finding the max number of files
+        totalcount = 0
         for logdef in logdefinitions:
             ld = LogDescriptor(parent=logs, **logdef)
-            print('Finding logs for {}...'.format(ld.name), end='')
-            count = 0
             try:
-                for filename in os.listdir(ld.logdir_path):
+                totalcount += len(os.listdir(ld.logdir_path))
+            except FileNotFoundError:
+                pass
+        pub.sendMessage('update.gauge.max', totalcount=totalcount)
+
+        # trying all log descriptors found in log_definition.py
+        count = 0
+        for logdef in logdefinitions:
+            ld = LogDescriptor(parent=logs, **logdef)
+            try:
+                dircontent = os.listdir(ld.logdir_path)
+                for filename in dircontent:
                     fullpath = os.path.join(ld.logdir_path, filename)
                     try:
                         if ld.isValidFile(logfile=fullpath, separator=ld.separator):
                             count += 1
-                            print('\rFinding logs for {}, currently {} pcs'.format(ld.name, count), end='', flush=True)
+                            pub.sendMessage('update.progress', logname=ld.name, logcount=count)
                             _log = Log(logfile=fullpath, parent=ld)
                     except (UnicodeDecodeError, PermissionError):
                         pass
             except FileNotFoundError:
                 pass
-            print('\n')
-
+        progressbar.Destroy()
+        del progressbar
         return logs
 
     def set_active_log(self, log):
@@ -185,8 +199,6 @@ class Log(NodeMixin):
 
         return _ret
 
-
-
     def get_log_summary(self):
         """returns a summary that can be used e.g. in the statusbar"""
         levels = self.get_levels()
@@ -245,10 +257,46 @@ class Log(NodeMixin):
         return self.get_field_values(fieldname='emitter')
 
 
+class LogdetectProgress(wx.Frame):
+
+    def __init__(self, parent, title):
+        super(LogdetectProgress, self).__init__(parent, title=title, size=(300, 200))
+        self.gauge = wx.Gauge()
+        self.txt1 = wx.StaticText()
+        pub.subscribe(self.set_gauge_range, 'update.gauge.max')
+        pub.subscribe(self.update_progress, 'update.progress')
+        self.InitUI()
+
+    def update_progress(self, logname, logcount):
+        self.gauge.SetValue(logcount)
+        self.txt1.SetLabel("Detecting logs for {}... {}".format(logname, logcount))
+        self.pnl.Layout()
+
+    def set_gauge_range(self, totalcount):
+        self.gauge.SetRange(totalcount)
+
+    def InitUI(self):
+        self.pnl = wx.Panel(self)
+        self.vbox = wx.BoxSizer(wx.VERTICAL)  # global box
+
+        self.gauge = wx.Gauge(self.pnl, range=20, size=(250, 25), style=wx.GA_HORIZONTAL)
+        self.txt1 = wx.StaticText(self.pnl)
+        self.txt1.SetLabel("Detecting logs...")
+
+        self.vbox.Add((0, 10))
+        self.vbox.Add(self.gauge, flag=wx.ALIGN_CENTRE_HORIZONTAL, border=5)
+        self.vbox.Add((0, 10))
+        self.vbox.Add(self.txt1, proportion=1, flag=wx.ALIGN_CENTER_HORIZONTAL, border=5)
+        self.pnl.SetSizerAndFit(self.vbox)
+
+        self.SetSize((400, 120))
+        self.Centre()
+        self.Show(True)
+
+
 if __name__ == '__main__':
     pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'),
            'separator': ' -- ',
            'name': 'PyNozzlePro',
            'logdir_path': 'V:\\KO\\NozzlePro'}
-
     ld = LogDescriptor(parent=None, )
