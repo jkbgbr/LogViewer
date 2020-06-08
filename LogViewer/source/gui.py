@@ -3,6 +3,7 @@
 the view component
 """
 
+import time
 from typing import Set, Dict
 
 import wx
@@ -12,7 +13,6 @@ import wx.lib.mixins.listctrl as listmix
 from pubsub import pub
 
 from LogViewer.source.config import APP_LONG_NAME, CONFIGFILE_PATH, APP_NAME, log_level_colors
-import time
 
 
 class MenuBar(wx.MenuBar):
@@ -344,9 +344,9 @@ class SettingsPanel(wx.Panel):
 
 
 if __name__ == '__main__':
+    from LogViewer.source.main import LogViewerApp
 
-    from LogViewer.source.main import App
-    app = App()
+    app = LogViewerApp()
     app.start()
 
     frame = MainFrame(None)
