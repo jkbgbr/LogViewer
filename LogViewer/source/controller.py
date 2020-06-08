@@ -3,6 +3,7 @@
 the controller component
 """
 
+import importlib
 import os
 import re
 from typing import Sequence, Set
@@ -13,20 +14,42 @@ from pubsub import pub
 
 from LogViewer.source.config import APP_LONG_NAME, UNDEFINED
 from LogViewer.source.gui import MainFrame
-from LogViewer.source.log_definition import logdefinitions
+
+
+# from LogViewer.source.log_definition import logdefinitions
 
 
 class Controller:
 
-    def __init__(self):
+    def __init__(self, external_logdefinition=None):
         self.view = MainFrame(None, -1, APP_LONG_NAME, size=(1250, 690))  # the GUI
-        self.logs = self.detect_logs()
+
+        # log definitions are provided either locally through import, for the case the App is run standalone
+        # or can be provided externally when starting the app
+        self.logdefinitions = self.set_logdefinitions(external_logdefinition)
+
+        self.logs = self.detect_logs(self.logdefinitions)
         self.view.treectrl.update_tree(treedata=self.logs)
         self._active_log = None
         pub.subscribe(self.set_active_log, 'tree.selected')
 
     @classmethod
-    def detect_logs(cls):
+    def set_logdefinitions(cls, external_logdefinition=None):
+        """sets the logdefinition file to be used"""
+        try:
+            # using the file in the source code
+            if external_logdefinition is None:
+                logdef = importlib.import_module('LogViewer.source.log_definition', 'logdefinitions')
+                logdef = logdef.logdefinitions
+            # externally provided value
+            else:
+                logdef = external_logdefinition
+        except ImportError:
+            raise
+        return logdef
+
+    @classmethod
+    def detect_logs(cls, logdefinitions):
         """
         Looks into the path provided and gets all files, then tries to parse them.
         Populates a tree based on the types of logs found
@@ -111,7 +134,10 @@ class LogDescriptor(NodeMixin):
 
     @staticmethod
     def isValidFile(logfile: str = None, separator: str = None):
-        """Tells if the file provided is a valid file for self.descriptor"""
+        """
+        Tells if the file provided is a valid file for self.descriptor
+        ONLY THE FIRST line is checked.
+        """
 
         first_line = Log.read_logfile(logfile)[0]
 
@@ -159,13 +185,28 @@ class Log(NodeMixin):
         return lines
 
     @classmethod
-    def parse_entry(cls, entry: str = None, separator: str = None) -> Sequence[str]:
-        """Disassembles a log entry either using the provided separator or using the own"""
+    def parse_entry(cls, entry: str = None, separator: str = None,
+                    expected_length: int = None, level_position: int = None) -> Sequence[str]:
+        """
+        Disassembles a log entry either using the provided separator or using the own
+        :param entry: the entry to be parsed
+        :param separator: the separator used to partition the entry
+        :param expected_length: how long it is
+        :param level_position: the level of the position
+        :return:
+        :rtype:
+        """
 
         # failing finding the seaparator means: the file does not belong to the descriptor used to parse.
         # we fail here and catch the exception e.g. in isValidFile
         if separator not in entry:
-            raise ValueError('No separator "{}" found in entry "{}"'.format(separator, entry))
+            # returning a dummy entry
+            _ret = ['dummy' for x in range(expected_length)]
+            _ret[0] = '01-01-1900. 00:00:00.001'
+            _ret[level_position] = 'CRITICAL'
+            _ret[-1] = entry
+            entry = separator.join(_ret)
+            # # raise ValueError('No separator "{}" found in entry "{}"'.format(separator, entry))
 
         # if the last field - the message - is empty so the row to be parsed ends with a separator
         # if the separator is fully there
@@ -220,6 +261,15 @@ class Log(NodeMixin):
 
         return _ret
 
+    @property
+    def get_level_position(self):
+        """returns the index of the level in the entry"""
+        smalled = [x.lower() for x in self.parent.entry_structure]
+        try:
+            return smalled.index('level')
+        except IndexError:
+            return len(self.parent.entry_structure)
+
     def get_field_values(self, fieldname: str = None, lines: Sequence[str] = None) -> Set[str]:
         """
         Returns a set with the unique names found in the given field. If lines is provided, only those will be
@@ -238,7 +288,11 @@ class Log(NodeMixin):
             lines = self.read_logfile(logfile=self.logfile)
 
         # getting all lines, parsed
-        parsed = [self.parse_entry(x, separator=self.separator) for x in lines]
+        parsed = [self.parse_entry(x,
+                                   separator=self.separator,
+                                   expected_length=len(self.parent.entry_structure),
+                                   level_position=self.get_level_position
+                                   ) for x in lines]
 
         # retreiving all unique values
         _ret = {x[level_position] for x in parsed}

@@ -146,12 +146,15 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
 
     def OnGetItemText(self, item, column):
         """This is the method that makes the listctrl virtual"""
-        _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator)
+        _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator,
+                                    expected_length=len(self.log.parent.entry_structure),
+                                    level_position=self.log.get_level_position)
 
         try:
             return _ret[column]
         except (IndexError, TypeError):
-            print('Tried to access item {} in column {} with separator {}. Did not succeed.'.format(item, column, self.log.separator))
+            print('Tried to access item {} in column {} with separator {}. Did not succeed.'.format(item, column,
+                                                                                                    self.log.separator))
             print('The row to parse was: "{}"'.format(self.all_lines[item]))
             print('The parsed result is: "{}"'.format(_ret))
 
