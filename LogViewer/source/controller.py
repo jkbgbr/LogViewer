@@ -201,7 +201,10 @@ class Log(NodeMixin):
             _ret['messages_per_level'][level] = len([x for x in lines if level in x])
 
         # getting the number of sections
-        _ret['sections'] = len([x for x in lines if self.descriptor.section_start in x])
+        if self.descriptor.section_start is not None:
+            _ret['sections'] = len([x for x in lines if self.descriptor.section_start in x])
+        else:
+            _ret['sections'] = 1
 
         return _ret
 
