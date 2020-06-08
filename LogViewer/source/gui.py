@@ -237,12 +237,17 @@ class MainFrame(wx.Frame):
         pub.subscribe(self.show_logsummary, 'statusbar.logsummary')
         pub.subscribe(self.set_time, 'time')
 
+        self.Bind(wx.EVT_CLOSE, self.OnClose)
+
+    def OnClose(self, event):
+        print('closing...')
+        self.Destroy()
+
     def set_time(self, time):
         """sets the time in the Window name field"""
         self.SetTitle('{} - {}'.format(APP_LONG_NAME, time))
 
     def show_logsummary(self, logsum: Dict = None):
-
         txt = '{} sections, '.format(logsum['sections'])
         txt += '{} entries, '.format(logsum['entries'])
         txt += ' | '.join(['{}: {}'.format(k, v) for k, v in logsum['messages_per_level'].items()])

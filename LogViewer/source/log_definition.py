@@ -61,4 +61,4 @@ wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
        'default_level': None,
        'logdir_path': 'W:\\GJ\\Logs\\WSS'}
 
-logdefinitions = wss, pnp, pyTVRG, pyTVRG_trace, pyTVRG_sim
+logdefinitions = wss, pnp, pyTVRG, pyTVRG_sim, pyTVRG_trace

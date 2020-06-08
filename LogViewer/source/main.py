@@ -30,7 +30,7 @@ class LogViewerApp(wx.App):
 
     def __init__(self, redirect=False, external_logdefinition=None):
         super(LogViewerApp, self).__init__(redirect)
-        self.controller = Controller(external_logdefinition)
+        self.controller = Controller(external_logdefinition=external_logdefinition)
 
     def OnInit(self):  # added so we can have a nice splash screen
         wx.GetApp().Yield()  # allowing for processing pending events
@@ -44,17 +44,17 @@ class LogViewerApp(wx.App):
 
 
 if __name__ == '__main__':  # pragma: no cover
-    # app = LogViewerApp()
-    # app.start()
-
-    VW = {'entry_structure': ('Timestamp', 'Session', 'Level', 'Emitter', 'File', 'Line', 'Method', 'Message'),
-          'separator': ' -- ',
-          'section_start': 'Starting a new session',
-          'name': 'mimi',
-          'default_level': 'TRACE',
-          'logdir_path': os.path.abspath('C:\\Users\\Jakab Gábor\\AppData\\Roaming\\VW\\Logs')}
-
-    logdefinitions = VW,
-
-    app = LogViewerApp(external_logdefinition=logdefinitions)
+    app = LogViewerApp()
     app.start()
+    #
+    # VW = {'entry_structure': ('Timestamp', 'Session', 'Level', 'Emitter', 'File', 'Line', 'Method', 'Message'),
+    #       'separator': ' -- ',
+    #       'section_start': 'Starting a new session',
+    #       'name': 'mimi',
+    #       'default_level': 'TRACE',
+    #       'logdir_path': os.path.abspath('C:\\Users\\Jakab Gábor\\AppData\\Roaming\\VW\\Logs')}
+    #
+    # logdefinitions = VW,
+    #
+    # app = LogViewerApp(external_logdefinition=logdefinitions)
+    # app.start()
