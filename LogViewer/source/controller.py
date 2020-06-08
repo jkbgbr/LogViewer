@@ -31,7 +31,7 @@ class Controller:
         self.logs = self.detect_logs(self.logdefinitions)
         self.view.treectrl.update_tree(treedata=self.logs)
         self._active_log = None
-        pub.subscribe(self.set_active_log, 'tree.selected')
+        pub.subscribe(self.set_active_log, 'logviewer.tree.selected')
 
     @classmethod
     def set_logdefinitions(cls, external_logdefinition=None):
@@ -69,7 +69,7 @@ class Controller:
                 totalcount += len(os.listdir(ld.logdir_path))
             except FileNotFoundError:
                 pass
-        pub.sendMessage('update.gauge.max', totalcount=totalcount)
+        pub.sendMessage('logviewer.update.gauge.max', totalcount=totalcount)
 
         # trying all log descriptors found in log_definition.py
         count = 0
@@ -80,9 +80,11 @@ class Controller:
                 for filename in dircontent:
                     fullpath = os.path.join(ld.logdir_path, filename)
                     try:
-                        if ld.isValidFile(logfile=fullpath, separator=ld.separator):
+                        if ld.isValidFile(logfile=fullpath, separator=ld.separator,
+                                          expected_length=ld.expected_length,
+                                          level_position=ld.level_position, file_extension=ld.file_extension):
                             count += 1
-                            pub.sendMessage('update.progress', logname=ld.name, logcount=count)
+                            pub.sendMessage('logviewer.update.progress', logname=ld.name, logcount=count)
                             _log = Log(logfile=fullpath, parent=ld)
                     except (UnicodeDecodeError, PermissionError):
                         pass
@@ -97,15 +99,15 @@ class Controller:
             self._active_log = log
             self.view.loglist.set_log(self._active_log)
 
-             # filling the list. if the descriptor has a default level defined, this will be shown
+            # filling the list. if the descriptor has a default level defined, this will be shown
             self.view.loglist.fill_list(level=self._active_log.descriptor.default_level)
 
-            pub.sendMessage('list.levels', levels=self._active_log.get_levels())
-            pub.sendMessage('list.emitters', emitters=self._active_log.get_emitters())
-            pub.sendMessage('list.filled')
-            pub.sendMessage('statusbar.logsummary', logsum=self._active_log.get_log_summary())
+            pub.sendMessage('logviewer.list.levels', levels=self._active_log.get_levels())
+            pub.sendMessage('logviewer.list.emitters', emitters=self._active_log.get_emitters())
+            pub.sendMessage('logviewer.list.filled')
+            pub.sendMessage('logviewer.statusbar.logsummary', logsum=self._active_log.get_log_summary())
         else:
-            pub.sendMessage('clear.all')
+            pub.sendMessage('logviewer.clear.all')
 
     def print_logtree(self):
         print(RenderTree(self.logs, style=ContStyle()))
@@ -120,6 +122,7 @@ class LogDescriptor(NodeMixin):
                  section_start: str = None,
                  name: str = None,
                  default_level: str = None,
+                 file_extension: str = None,
                  logdir_path: str = None):
         """
         Holds basic information required to handle logs: structure, field separator, name etc
@@ -130,20 +133,39 @@ class LogDescriptor(NodeMixin):
         self.section_start = section_start
         self.name = name
         self.default_level = default_level
+        self.file_extension = file_extension
         self.logdir_path = logdir_path
 
+    @property
+    def level_position(self):
+        """returns the index of the level in the entry"""
+        smalled = [x.lower() for x in self.entry_structure]
+        try:
+            return smalled.index('level')
+        except IndexError:
+            return len(self.entry_structure)
+
+    @property
+    def expected_length(self):
+        """returns the index of the level in the entry"""
+        return len(self.entry_structure)
+
     @staticmethod
-    def isValidFile(logfile: str = None, separator: str = None):
+    def isValidFile(logfile: str = None, separator: str = None, expected_length: int = None, level_position: int = None,
+                    file_extension: str = None) -> bool:
         """
         Tells if the file provided is a valid file for self.descriptor
         ONLY THE FIRST line is checked.
         """
 
+        if file_extension in os.path.splitext(logfile):
+            return False
         first_line = Log.read_logfile(logfile)[0]
 
         # trying, using the provided separator
         try:
-            entry = Log.parse_entry(entry=first_line, separator=separator)
+            entry = Log.parse_entry(entry=first_line, separator=separator, expected_length=expected_length,
+                                    level_position=level_position)
         except ValueError:  # parsing fails as the separator was not found in the file
             return False
 
@@ -261,15 +283,6 @@ class Log(NodeMixin):
 
         return _ret
 
-    @property
-    def get_level_position(self):
-        """returns the index of the level in the entry"""
-        smalled = [x.lower() for x in self.parent.entry_structure]
-        try:
-            return smalled.index('level')
-        except IndexError:
-            return len(self.parent.entry_structure)
-
     def get_field_values(self, fieldname: str = None, lines: Sequence[str] = None) -> Set[str]:
         """
         Returns a set with the unique names found in the given field. If lines is provided, only those will be
@@ -291,7 +304,7 @@ class Log(NodeMixin):
         parsed = [self.parse_entry(x,
                                    separator=self.separator,
                                    expected_length=len(self.parent.entry_structure),
-                                   level_position=self.get_level_position
+                                   level_position=self.descriptor.level_position
                                    ) for x in lines]
 
         # retreiving all unique values
@@ -317,8 +330,8 @@ class LogdetectProgress(wx.Frame):
         super(LogdetectProgress, self).__init__(parent, title=title, size=(300, 200))
         self.gauge = wx.Gauge()
         self.txt1 = wx.StaticText()
-        pub.subscribe(self.set_gauge_range, 'update.gauge.max')
-        pub.subscribe(self.update_progress, 'update.progress')
+        pub.subscribe(self.set_gauge_range, 'logviewer.update.gauge.max')
+        pub.subscribe(self.update_progress, 'logviewer.update.progress')
         self.InitUI()
 
     def update_progress(self, logname, logcount):

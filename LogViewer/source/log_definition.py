@@ -26,11 +26,13 @@ will be shown in the tree view.
 log definitions
 """
 
+
 pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'),
        'separator': ' -- ',
        'section_start': 'Program start',
        'name': 'PyNozzlePro',
        'default_level': 'INFO',
+       'file_extension': '.log',
        'logdir_path': 'V:\\KO\\NozzlePro'}
 
 pyTVRG_sim = {'entry_structure': ('Timestamp', 'emitter', 'Level', 'message'),
@@ -38,6 +40,7 @@ pyTVRG_sim = {'entry_structure': ('Timestamp', 'emitter', 'Level', 'message'),
               'name': 'tvrg data simulator',
               'section_start': 'Program start',
               'default_level': 'DEBUG',
+              'file_extension': '.log',
               'logdir_path': 'E:\\Tiszavirag\\pyTVRG\\monitoring\\simulator'}
 
 pyTVRG = {'entry_structure': ('Timestamp', 'Level', 'module', 'message'),
@@ -45,6 +48,7 @@ pyTVRG = {'entry_structure': ('Timestamp', 'Level', 'module', 'message'),
           'section_start': 'Started pyTVRG',
           'name': 'pyTVRG',
           'default_level': 'DEBUG',
+          'file_extension': '.log',
           'logdir_path': 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\pyTVRG\\Logs'}
 
 pyTVRG_trace = {'entry_structure': ('Timestamp', 'Level', 'emitter', 'module', 'line', 'function', 'message'),
@@ -52,6 +56,7 @@ pyTVRG_trace = {'entry_structure': ('Timestamp', 'Level', 'emitter', 'module', '
                 'section_start': 'Started pyTVRG',
                 'name': 'tvrg trace',
                 'default_level': 'DEBUG',
+                'file_extension': '.log',
                 'logdir_path': 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\pyTVRG\\Logs'}
 
 wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
@@ -59,6 +64,7 @@ wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
        'section_start': 'STARTING',
        'name': 'Wasserstrahlschneider',
        'default_level': None,
+       'file_extension': '.log',
        'logdir_path': 'W:\\GJ\\Logs\\WSS'}
 
 logdefinitions = wss, pnp, pyTVRG, pyTVRG_sim, pyTVRG_trace

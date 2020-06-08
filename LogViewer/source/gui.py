@@ -74,7 +74,7 @@ class Tree(wx.TreeCtrl):
             self.Expand(root)
 
     def OnLeftClick(self, event):
-        pub.sendMessage('tree.selected', log=self.GetItemData(event.GetItem()))
+        pub.sendMessage('logviewer.tree.selected', log=self.GetItemData(event.GetItem()))
 
     def OnItemCollapsed(self, evt):
         self.DeleteChildren(evt.GetItem())
@@ -104,7 +104,7 @@ class Watch(wx.Timer):
     def OnTimer(self, event):
         # time string can have characters 0..9, -, period, or space
         ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
-        pub.sendMessage('time', time=ts)
+        pub.sendMessage('logviewer.time', time=ts)
 
 
 class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
@@ -119,8 +119,8 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
         # http://wxpython-users.1045709.n5.nabble.com/Changing-cell-background-inside-virtual-ListCtrl-td5720303.html
         self.backgroundcolor = wx.ListItemAttr()
 
-        pub.subscribe(self.set_columns, 'list.filled')
-        pub.subscribe(self.fill_list, 'list.filter')
+        pub.subscribe(self.set_columns, 'logviewer.list.filled')
+        pub.subscribe(self.fill_list, 'logviewer.list.filter')
 
     def set_log(self, log):
         self.log = log
@@ -147,8 +147,8 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
     def OnGetItemText(self, item, column):
         """This is the method that makes the listctrl virtual"""
         _ret = self.log.parse_entry(self.all_lines[item], separator=self.log.separator,
-                                    expected_length=len(self.log.parent.entry_structure),
-                                    level_position=self.log.get_level_position)
+                                    expected_length=self.log.descriptor.expected_length,
+                                    level_position=self.log.descriptor.level_position)
 
         try:
             return _ret[column]
@@ -170,7 +170,7 @@ class LogList(wx.ListView, listmix.ListCtrlAutoWidthMixin):
         self.all_lines = lines
         self.build_columns(self.log)
         self.SetItemCount(len(lines))
-        pub.sendMessage('list.filled')
+        pub.sendMessage('logviewer.list.filled')
         self.Thaw()
 
     def colorize_entry(self, index, level):
@@ -233,14 +233,14 @@ class MainFrame(wx.Frame):
 
         # sending out a message telling init is finished
         # logger.debug('Config file name set to {}'.format(self.appConfig.GetLocalFileName(APP_NAME)))
-        pub.subscribe(self.clear_all, 'clear.all')
-        pub.subscribe(self.show_logsummary, 'statusbar.logsummary')
-        pub.subscribe(self.set_time, 'time')
+        pub.subscribe(self.clear_all, 'logviewer.clear.all')
+        pub.subscribe(self.show_logsummary, 'logviewer.statusbar.logsummary')
+        pub.subscribe(self.set_time, 'logviewer.time')
 
         self.Bind(wx.EVT_CLOSE, self.OnClose)
 
     def OnClose(self, event):
-        print('closing...')
+        pub.getDefaultTopicMgr().delTopic('logviewer')  #
         self.Destroy()
 
     def set_time(self, time):
@@ -318,8 +318,8 @@ class SettingsPanel(wx.Panel):
         base_vbox.SetSizeHints(self)
         self.SetSizer(base_vbox)
 
-        pub.subscribe(self.update_loglevels, 'list.levels')
-        pub.subscribe(self.update_emitters, 'list.emitters')
+        pub.subscribe(self.update_loglevels, 'logviewer.list.levels')
+        pub.subscribe(self.update_emitters, 'logviewer.list.emitters')
 
         self.Bind(wx.EVT_COMBOBOX, self.update_list)
         self.Bind(wx.EVT_BUTTON, self.show_all, self.reset_button)
@@ -329,12 +329,12 @@ class SettingsPanel(wx.Panel):
         # level is always something so we can find out at which level to show stuff
         level = self.cb_level.GetValue()
         emitter = self.cb_emitter.GetValue()
-        pub.sendMessage('list.filter', level=level, emitter=emitter)
+        pub.sendMessage('logviewer.list.filter', level=level, emitter=emitter)
 
     def show_all(self, event):
         self.cb_level.SetValue('')
         self.cb_emitter.SetValue('')
-        pub.sendMessage('list.filter', level=None, emitter=None)
+        pub.sendMessage('logviewer.list.filter', level=None, emitter=None)
 
     def clear_levels_emitters(self):
         self.cb_level.Clear()
