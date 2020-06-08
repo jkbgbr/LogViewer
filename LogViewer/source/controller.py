@@ -3,8 +3,8 @@
 the controller component
 """
 
-import re
 import os
+import re
 from typing import Sequence, Set
 
 from anytree import NodeMixin, RenderTree, ContStyle, Node
@@ -37,13 +37,21 @@ class Controller:
         # trying all log descriptors found in log_definition.py
         for logdef in logdefinitions:
             ld = LogDescriptor(parent=logs, **logdef)
-            for filename in os.listdir(ld.logdir_path):
-                fullpath = os.path.join(ld.logdir_path, filename)
-                try:
-                    if ld.isValidFile(logfile=fullpath, separator=ld.separator):
-                        _log = Log(logfile=fullpath, parent=ld)
-                except (UnicodeDecodeError, PermissionError):
-                    pass
+            print('Finding logs for {}...'.format(ld.name), end='')
+            count = 0
+            try:
+                for filename in os.listdir(ld.logdir_path):
+                    fullpath = os.path.join(ld.logdir_path, filename)
+                    try:
+                        if ld.isValidFile(logfile=fullpath, separator=ld.separator):
+                            count += 1
+                            print('\rFinding logs for {}, currently {} pcs'.format(ld.name, count), end='', flush=True)
+                            _log = Log(logfile=fullpath, parent=ld)
+                    except (UnicodeDecodeError, PermissionError):
+                        pass
+            except FileNotFoundError:
+                pass
+            print('\n')
 
         return logs
 
@@ -164,12 +172,12 @@ class Log(NodeMixin):
         expected_length = len([m.start() for m in re.finditer(separator, entry)]) + 1
 
         if len(_ret) < expected_length:
-            print('is: {}, should be: {}'.format(len(_ret), expected_length))
+            # print('is: {}, should be: {}'.format(len(_ret), expected_length))
             while len(_ret) < expected_length:
                 _ret += (UNDEFINED, )
 
         elif len(_ret) > expected_length:
-            print('is: {}, should be: {}'.format(len(_ret), expected_length))
+            # print('is: {}, should be: {}'.format(len(_ret), expected_length))
             _ret = tuple(_ret[0:expected_length])
 
         else:
@@ -241,4 +249,3 @@ if __name__ == '__main__':
            'logdir_path': 'V:\\KO\\NozzlePro'}
 
     ld = LogDescriptor(parent=None, )
-    print(logs)
