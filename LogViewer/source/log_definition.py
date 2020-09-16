@@ -26,13 +26,13 @@ pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'
        'section_start': 'Program start',
        'name': 'PyNozzlePro',
        'default_level': 'INFO',
-       'logdir_path': 'V:\\KO\\NozzlePro'}
+       'logdir_path': 'W:/GlattProgramme/PNP/Logs'}
 
 wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
        'separator': ' -- ',
        'section_start': 'STARTING',
        'name': 'Wasserstrahlschneider',
        'default_level': None,
-       'logdir_path': 'W:\\GJ\\Logs\\WSS'}
+       'logdir_path': 'W:\GlattProgramme\WSS_Sammler\Logs'}  #'W:\\GJ\\Logs\\WSS'
 
 logdefinitions = wss, pnp

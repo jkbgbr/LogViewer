@@ -178,7 +178,6 @@ class Log(NodeMixin):
         return _ret
 
 
-
     def get_log_summary(self):
         """returns a summary that can be used e.g. in the statusbar"""
         levels = self.get_levels()
