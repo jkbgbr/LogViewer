@@ -32,9 +32,8 @@ pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'
        'section_start': 'Program start',
        'name': 'PyNozzlePro',
        'default_level': 'INFO',
-       'logdir_path': 'W:/GlattProgramme/PNP/Logs'}
-       'file_extension': '.log',
-       'logdir_path': 'V:\\KO\\NozzlePro'}
+       'logdir_path': 'W:/GlattProgramme/PNP/Logs',
+       'file_extension': '.log'}
 
 pyTVRG_sim = {'entry_structure': ('Timestamp', 'emitter', 'Level', 'message'),
               'separator': '|',
