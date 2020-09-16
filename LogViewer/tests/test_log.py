@@ -1,10 +1,10 @@
-import unittest
-from LogViewer.source.controller import LogDescriptor, Log
-import os
 import logging
+import os
 import random
+import unittest
 
-from LogViewer.source.config import LOGLEVELS
+from LogViewer.source.controller import LogDescriptor, Log
+
 LEVELS = {'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'}
 NUM_TEST_ENTRIES = 50
 
@@ -53,7 +53,10 @@ class TestLogHandling(unittest.TestCase):
 
     def test_is_valid(self):
         """tests the validity of the log file"""
-        self.assertTrue(self.ld.isValidFile(logfile=self.log.logfile, separator=self.ld.separator))
+        self.assertTrue(self.ld.isValidFile(logfile=self.log.logfile, separator=self.ld.separator,
+                                            expected_length=self.ld.expected_length,
+                                            level_position=self.ld.level_position,
+                                            file_extension=self.ld.file_extension))
 
     def test_list_levels(self):
         """tests if levels are found"""

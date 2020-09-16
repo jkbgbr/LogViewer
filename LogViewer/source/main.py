@@ -3,6 +3,9 @@
 entry point
 """
 
+# todo: reduce the number of uses and definitions of parse_entry
+# todo: pre-parse all entries and use this to show, filter by level etc., so dummy entries are found as well
+
 import os.path
 
 import wx
@@ -23,12 +26,11 @@ if not os.path.exists(CONFIG_DIR):
 # logger = logging.getLogger(__name__)
 
 
-class App(wx.App):
+class LogViewerApp(wx.App):
 
-    def __init__(self, redirect=False):
-        super(App, self).__init__(redirect)
-        self.controller = Controller()
-        # logger.debug('App initialized')
+    def __init__(self, redirect=False, external_logdefinition=None):
+        super(LogViewerApp, self).__init__(redirect)
+        self.controller = Controller(external_logdefinition=external_logdefinition)
 
     def OnInit(self):  # added so we can have a nice splash screen
         wx.GetApp().Yield()  # allowing for processing pending events
@@ -42,5 +44,17 @@ class App(wx.App):
 
 
 if __name__ == '__main__':  # pragma: no cover
-    app = App()
+    app = LogViewerApp()
     app.start()
+    #
+    # VW = {'entry_structure': ('Timestamp', 'Session', 'Level', 'Emitter', 'File', 'Line', 'Method', 'Message'),
+    #       'separator': ' -- ',
+    #       'section_start': 'Starting a new session',
+    #       'name': 'mimi',
+    #       'default_level': 'TRACE',
+    #       'logdir_path': os.path.abspath('C:\\Users\\Jakab Gábor\\AppData\\Roaming\\VW\\Logs')}
+    #
+    # logdefinitions = VW,
+    #
+    # app = LogViewerApp(external_logdefinition=logdefinitions)
+    # app.start()

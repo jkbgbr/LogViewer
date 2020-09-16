@@ -21,12 +21,44 @@ will be shown in the tree view.
 
 """
 
+# -*- coding: utf-8 -*-
+"""
+log definitions
+"""
+
+
 pnp = {'entry_structure': ('Timestamp', 'Session', 'emitter', 'Level', 'message'),
        'separator': ' -- ',
        'section_start': 'Program start',
        'name': 'PyNozzlePro',
        'default_level': 'INFO',
        'logdir_path': 'W:/GlattProgramme/PNP/Logs'}
+       'file_extension': '.log',
+       'logdir_path': 'V:\\KO\\NozzlePro'}
+
+pyTVRG_sim = {'entry_structure': ('Timestamp', 'emitter', 'Level', 'message'),
+              'separator': '|',
+              'name': 'tvrg data simulator',
+              'section_start': 'Program start',
+              'default_level': 'DEBUG',
+              'file_extension': '.log',
+              'logdir_path': 'E:\\Tiszavirag\\pyTVRG\\monitoring\\simulator'}
+
+pyTVRG = {'entry_structure': ('Timestamp', 'Level', 'module', 'message'),
+          'separator': '|',
+          'section_start': 'Started pyTVRG',
+          'name': 'pyTVRG',
+          'default_level': 'DEBUG',
+          'file_extension': '.log',
+          'logdir_path': 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\pyTVRG\\Logs'}
+
+pyTVRG_trace = {'entry_structure': ('Timestamp', 'Level', 'emitter', 'module', 'line', 'function', 'message'),
+                'separator': ' -- ',
+                'section_start': 'Started pyTVRG',
+                'name': 'tvrg trace',
+                'default_level': 'DEBUG',
+                'file_extension': '.log',
+                'logdir_path': 'C:\\Users\\Jakab Gábor\\AppData\\Roaming\\pyTVRG\\Logs'}
 
 wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
        'separator': ' -- ',
@@ -35,4 +67,4 @@ wss = {'entry_structure': ('Timestamp', 'Session', 'Level', 'message'),
        'default_level': None,
        'logdir_path': 'W:\GlattProgramme\WSS_Sammler\Logs'}  #'W:\\GJ\\Logs\\WSS'
 
-logdefinitions = wss, pnp
+logdefinitions = wss, pnp, pyTVRG, pyTVRG_sim, pyTVRG_trace
